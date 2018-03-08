@@ -1,0 +1,82 @@
+.connect {
+  height: 673px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  text-align: center; }
+  .connect img {
+    margin: 0 -100%; }
+  .connect .c_login {
+    width: 398px;
+    height: 384px;
+    position: absolute;
+    background: white;
+    top: 50px;
+    left: 60%; }
+    .connect .c_login select {
+      width: 290px;
+      height: 45px;
+      font-size: 16px;
+      margin-top: 20px; }
+    .connect .c_login .user {
+      width: 290px;
+      height: 45px;
+      margin-top: 20px;
+      margin-left: 55px; }
+      .connect .c_login .user span {
+        float: left;
+        height: 43px;
+        width: 45px;
+        font-size: 14px;
+        line-height: 43px;
+        display: block;
+        border: 1px solid #DCDCDC; }
+      .connect .c_login .user .text {
+        float: left;
+        width: 243px;
+        height: 45px;
+        border: 1px solid #DCDCDC; }
+    .connect .c_login .password {
+      width: 290px;
+      height: 45px;
+      margin-top: 20px;
+      margin-left: 55px; }
+      .connect .c_login .password .word {
+        float: left;
+        width: 290px;
+        height: 45px;
+        border: 1px solid #DCDCDC; }
+  .connect .re_box {
+    width: 290px;
+    height: 45px;
+    margin-top: 20px;
+    margin-left: 55px;
+    padding: 0 30px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .connect .re_box h6 {
+      font-size: 16px;
+      font-weight: normal; }
+  .connect button {
+    width: 290px;
+    margin: 0 20px;
+    background: #D5D5D5;
+    height: 50px;
+    color: white;
+    text-align: center;
+    border: none; }
+  .connect .register_foot {
+    width: 398px;
+    height: 58px;
+    background: url(/project/images/1.svg) no-repeat scroll 15px center #c6c6c6;
+    background-size: 25% auto;
+    text-align: center;
+    line-height: 58px;
+    font-size: 16px;
+    position: absolute;
+    bottom: 0;
+    padding-left: 30px; }
+
+/*# sourceMappingURL=login.css.map */

@@ -1,0 +1,1 @@
+"use strict";define(["jquery","cookie"],function(){$("header").load("/project/html/include/header.html",function(){var e=$.cookie("loginUser");e&&$(".login_reg").html('<a href="'+e+'"></a>')}),$("footer").load("/project/html/include/footer.html")});

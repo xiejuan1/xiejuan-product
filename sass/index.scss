@@ -47,7 +47,7 @@
            }
         }
     }
-   aside{
+   .aside{
        width: 1118px;
        height: 295px;
        margin: 0 auto;
@@ -58,13 +58,15 @@
            height: 295px;
            width: 259px;
            float: left;
+           cursor: pointer;
            border: 1px solid #C0C0C0;
        }
        dt{
            width: 259px;
             height: 250px; 
             overflow: hidden; 
-
+           cursor: pointer;
+            
             
             img{
              width: 259px;
@@ -186,6 +188,8 @@
          height: 450px;
          width: 405px;
          float: left;
+           cursor: pointer;
+         
          &:hover{
             opacity: .8;
         }
@@ -203,6 +207,7 @@
              width: 331px;
              height: 213px;
              float: left;
+             cursor: pointer;
              margin-left: 25px;
              
               &:hover{
@@ -220,7 +225,6 @@
       height: 220px;
       width: 1118px;
       margin: 0 auto;
-      
       border-top: 1px solid #DCDCDC;
      display: flex;
      justify-content: space-between;
@@ -229,6 +233,7 @@
     .left{
         height: 220px;
         width: 545px;
+        cursor: pointer;
         padding-top: 40px;
         box-sizing: border-box;
         img{
@@ -239,6 +244,7 @@
     .right{
         height: 220px;
         width: 545px;
+           cursor: pointer;
          padding-top: 40px;
         box-sizing: border-box;
          img{

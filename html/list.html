@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+
+		<link rel="stylesheet" type="text/css" href="/project/css/list.css"/>
+		<link rel="stylesheet" type="text/css" href="/project/lib/jquery_plugins/xmcarousel.css"/>
+		<script src="/project/lib/requirejs/require.js" data-main="/project/js/index"></script>
+		<script src="/project/js/list.js"></script>
+		
+	</head>
+	<body>
+		<header></header>
+		<div class="connect">
+			<div class="banner"><img src="/project/images/list_banner.jpg"></div>
+			<ul class="ul">
+				<li><a href="#">综合</a>
+					
+			<div class="flower" style="display: block;">
+					<div class="listed"></div>
+				<script type="text/html" id="list_template">
+					{{each list as prod}}
+					<div class="prod">
+						<div class="id" style="display:none;">{{prod.id}}</div>
+						<div class="img"><img src="{{prod.img}}"></div>
+						<div class="title">{{prod.title}}</div>
+						<div class="list">{{prod.list}}</div>
+						<div class="price">${{prod.price}}</div>
+					</div>
+					{{/each}}
+				</script>
+			</div>		
+					
+				
+					
+				</li>
+				<li><a href="#">销量</a>
+					
+					<div class="flower" style="display:none;">
+					<div class="listed"></div>
+				<script type="text/html" id="list_template1">
+					{{each list as prod}}
+					<div class="prod">
+						<div class="id" style="display:none;">{{prod.id}}</div>
+						<div class="img"><img src="{{prod.img}}"></div>
+						<div class="title">{{prod.title}}</div>
+						<div class="list">{{prod.list}}</div>
+						<div class="price">${{prod.price}}</div>
+					</div>
+					{{/each}}
+				</script>
+			</div>	
+					
+					
+				</li>
+				<li><a href="#">更新</a>
+					
+					
+					<div class="flower" style="display: none;">
+					<div class="listed"></div>
+				<script type="text/html" id="list_t">
+					{{each list as prod}}
+					<div class="prod">
+						<div class="id" style="display:none;">{{prod.id}}</div>
+						<div class="img"><img src="{{prod.img}}"></div>
+						<div class="title">{{prod.title}}</div>
+						<div class="list">{{prod.list}}</div>
+						<div class="price">${{prod.price}}</div>
+					</div>
+					{{/each}}
+				</script>
+			</div>	
+					
+				</li>
+				<li><a href="#">价格</a>
+					
+					<div class="flower" style="display: none;">
+					<div class="listed"></div>
+				<script type="text/html" id="list_template">
+					{{each list as prod}}
+					<div class="prod">
+						<div class="id" style="display:none;">{{prod.id}}</div>
+						<div class="img"><img src="{{prod.img}}"></div>
+						<div class="title">{{prod.title}}</div>
+						<div class="list">{{prod.list}}</div>
+						<div class="price">${{prod.price}}</div>
+					</div>
+					{{/each}}
+				</script>
+			</div>	
+					
+					
+				</li>
+			</ul>
+			
+			
+		</div>
+		<footer></footer>
+	</body>
+</html>
