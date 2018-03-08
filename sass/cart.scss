@@ -1,0 +1,228 @@
+.container{
+    width: 100%;
+    overflow: hidden;
+    .order{
+        width: 970px;
+        height: 75px;
+        margin: 0 auto;
+        border-bottom: 1px solid #000000;
+        .my_cart{
+            width: 870px;
+            height: 75px;
+            font-size: 20px;
+            padding-top: 40px;
+            box-sizing: border-box;
+            float: left;
+        }
+        .clear{
+            width: 100px;
+            float: left;
+            height: 75px;
+            font-size: 14px;
+            padding-top:40px;
+            box-sizing: border-box;
+            background: url("/product/images/cart01.png") no-repeat left 43px;
+            background-size:12px 12px ;
+            text-align: center;
+        }
+    }
+    
+    .cart_body{
+        overflow: auto;
+        width: 970px;
+       overflow: hidden;
+        margin: 0 auto;
+        
+        .cart_title{
+            width: 973px;
+            height: 30px;
+            border-bottom: 1px solid;
+            
+            .id{
+                height: 30px;
+                text-align: center;
+                line-height: 30px;
+                float: left;
+                font-size: 16px;
+                width: 100px;
+            }
+            .totalcheck{
+                height: 30px;
+                text-align: center;
+                line-height: 30px;
+                float: left;
+                font-size: 16px;
+                width: 100px;
+            }
+            .img{
+               height: 30px;
+                text-align: center;
+                line-height: 30px;
+                float: left;
+                font-size: 16px;
+                width: 200px;
+            }
+             .title{
+               height: 30px;
+                text-align: center;
+                line-height: 30px;
+                float: left;
+                font-size: 16px;
+                width: 200px;
+            }
+            .price{
+                height: 30px;
+                text-align: center;
+                line-height: 30px;
+                float: left;
+                font-size: 16px;
+                width: 100px;
+            }
+            
+            .amount{
+                height: 30px;
+                text-align: center;
+                line-height: 30px;
+                float: left;
+                font-size: 16px;
+                width: 150px;
+            }
+            
+             .price{
+                height: 30px;
+                text-align: center;
+                line-height: 30px;
+                float: left;
+                font-size: 16px;
+                width: 100px;
+            }
+        }
+        
+        
+        
+    
+    
+    .cart_main{
+            width: 960px;
+            height:160px;
+            border-bottom: 1px solid;
+
+            .id{
+                height: 160px;
+                text-align: center;
+                line-height: 160px;
+                float: left;
+                font-size: 16px;
+                width: 100px;
+            }
+            .totalcheck{
+                height: 160px;
+                text-align: center;
+                line-height: 160px;
+                float: left;
+                font-size: 16px;
+                width: 100px;
+            }
+            .img{
+               height: 160px;
+                text-align: center;
+                line-height: 160px;
+                float: left;
+                font-size: 16px;
+                width: 200px;
+            }
+             .title{
+               height: 160px;
+                text-align: center;
+                line-height: 160px;
+                float: left;
+                font-size: 16px;
+                width: 200px;
+            }
+            .price{
+                height: 160px;
+                text-align: center;
+                line-height: 160px;
+                float: left;
+                font-size: 16px;
+                width: 100px;
+            }
+            
+            .amount{
+                height: 160px;
+                text-align: center;
+                line-height: 160px;
+                float: left;
+                font-size: 16px;
+                width: 150px;
+            }
+            
+             .price{
+                height: 160px;
+                text-align: center;
+                line-height: 160px;
+                float: left;
+                font-size: 16px;
+                width: 100px;
+            }
+        }
+            
+    .cart_foot{
+        width: 980px;
+        height: 65px;
+//      background: yellow;
+        
+        margin: 0 auto;
+        .total{
+            width: 170px;
+            height: 65px;
+//          background: palegreen;
+            float: left;
+            span{
+                display: block;
+                width: 50px;
+//              background: palegoldenrod;
+                height: 65px;
+                float: left;
+                text-align: center;
+                line-height: 65px;
+            }
+            .totalmoney{
+                width: 120px;
+                height: 65px;
+                float: left;
+//              background:blue;
+                text-align: center;
+                line-height: 65px;
+            }
+        }
+        
+        .pay{
+            float: right;
+            width: 100px;
+            height: 65px;
+            background: red;
+            text-align: center;
+            line-height: 65px;
+            color: white;
+            border: none;
+            font-size: 18px;
+        }
+        
+    }  
+        
+    }
+    
+    
+    .help_right{
+        height: 110px;
+        width:973px;
+        margin: 0 auto;
+       
+        p{
+            font-size: 12px;
+            height: 30px;
+            line-height: 30px;
+        }
+    }
+}

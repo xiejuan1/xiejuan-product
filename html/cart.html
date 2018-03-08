@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<link rel="stylesheet" type="text/css" href="/product/css/cart.css"/>
+	
+		<script src="/product/lib/requirejs/require.js" data-main="/product/js/index"></script>
+
+		
+	</head>
+	<body>
+		<header></header>
+		<div class="container">
+			<div class="order">
+				<div class="my_cart">我的购物车</div>
+				<div class="clear">清空购物车</div>
+			</div>
+			<div class="cart_body">
+				
+				
+				<div class="cart_title">
+					<div class="totalcheck"><input type="checkbox" class="ck_prod">全选</div>
+					<div class="id">序号</div>
+					<div class="img">图片</div>
+					<div class="title">商品名称</div>
+					<div class="price">单价</div>
+					<div class="amount">数量</div>
+					<div class="price">价格</div>
+				</div>
+
+
+
+					<script type="text/html" id="carts">
+						{{each products as prod}}
+				<div class="cart_main">
+					<div class="check"><input type="checkbox" class="ck_prod"></div>
+					<div class="id">{{prod.pid}}</div>
+					<div class="img">{{prod.img}}</div>
+					<div class="title">{{prod.title}}</div>
+					<div class="amount"><button class="minus">-</button><input type="text" value="{{prod.amount}}" size="2" class="amount"><button class="add">+</button></div>
+					<div class="price">{{prod.price}}</div>
+					</div>
+					
+						{{/each}}
+					</script>
+				
+			
+			
+			
+			<div class="cart_foot">
+				<div class="total"><span>合计：</span><div class="totalmoney"></div></div>
+				<button class="pay">去结算</button>
+			</div>
+			
+			
+			</div>
+			
+			<div class="help_right">
+				<h4>订单帮助</h4>
+				<p>热线电话：400-1314-520</p>
+				<p>客服邮箱：service@roseonly.com  客服工作时间：周一至周日9:00-21:00</p>
+				<p>如果您在下单过程中遇到问题，请与我们联系。因为鲜花商品对配送时效有特殊要求，订购后请随时登录查询物流状态。</p>
+			</div>
+		</div>
+		<footer></footer>
+	</body>
+</html>
