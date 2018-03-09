@@ -1,1 +1,1 @@
-"use strict";require(["config"],function(){require(["jquery","template","load"],function(e,i){})});
+"use strict";require(["config"],function(){require(["jquery","template","load","carousel"],function(e,r){e(".banner").carousel({imgs:[{src:"/project/images/banner1.png",href:"/project/html/list.html"},{src:"/project/images/banner2.jpg",href:"/project/html/list.html"},{src:"/project/images/banner3.jpg",href:"project/html/list.html"},{src:"/project/images/banner4.jpg",href:"project/html/list.html"}],width:1118,height:405,duration:3e3})})});

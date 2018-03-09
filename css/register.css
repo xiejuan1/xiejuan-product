@@ -8,7 +8,7 @@
     margin: 0 -100%; }
   .connect .c_login {
     width: 398px;
-    height: 463px;
+    height: 510px;
     position: absolute;
     background: white;
     top: 50px;
@@ -31,25 +31,44 @@
         line-height: 43px;
         display: block;
         border: 1px solid #DCDCDC; }
-      .connect .c_login .user .text {
+      .connect .c_login .user .username {
         float: left;
         width: 243px;
         height: 45px;
         border: 1px solid #DCDCDC; }
+    .connect .c_login .emal {
+      width: 290px;
+      height: 65px;
+      margin-top: 20px;
+      margin-left: 55px; }
+      .connect .c_login .emal .email_info {
+        width: 290px;
+        height: 45px;
+        border: 1px solid #DCDCDC; }
+      .connect .c_login .emal .infos {
+        height: 20px;
+        width: 290px;
+        display: block;
+        font-size: 12px;
+        color: red; }
     .connect .c_login .password {
       width: 290px;
-      height: 45px;
-      margin-top: 20px;
+      height: 65px;
       margin-left: 55px; }
       .connect .c_login .password .word {
         float: left;
         width: 290px;
         height: 45px;
         border: 1px solid #DCDCDC; }
+      .connect .c_login .password .info {
+        height: 20px;
+        width: 290px;
+        font-size: 12px;
+        color: red;
+        display: block; }
     .connect .c_login .re_box {
       width: 290px;
       height: 45px;
-      margin-top: 20px;
       margin-left: 55px;
       padding: 0 30px;
       box-sizing: border-box; }
@@ -78,16 +97,14 @@
       padding-left: 30px; }
     .connect .c_login .code {
       width: 290px;
-      height: 45px;
-      margin-top: 20px;
-      margin-left: 55px;
-      border: 1px solid #DCDCDC; }
+      height: 65px;
+      margin-left: 55px; }
       .connect .c_login .code .usercode {
         width: 180px;
-        height: 43px;
+        height: 45px;
         position: absolute;
         left: 56px;
-        border: none; }
+        border: 1px solid #DCDCDC; }
       .connect .c_login .code .codes {
         height: 45px;
         width: 110px;
@@ -103,5 +120,30 @@
         right: 10px;
         text-align: center;
         font-size: 14px; }
+      .connect .c_login .code .info {
+        height: 20px;
+        width: 290px;
+        font-size: 12px;
+        color: red;
+        display: block; }
+    .connect .c_login .reg_form {
+      width: 290px;
+      margin: 0 20px;
+      background: #D5D5D5;
+      height: 50px;
+      color: white;
+      text-align: center;
+      border: none; }
+    .connect .c_login .register_foot {
+      width: 398px;
+      height: 58px;
+      background: url(/project/images/1.svg) no-repeat scroll 15px center #c6c6c6;
+      background-size: 25% auto;
+      text-align: center;
+      line-height: 58px;
+      font-size: 16px;
+      position: absolute;
+      bottom: 0;
+      padding-left: 30px; }
 
 /*# sourceMappingURL=register.css.map */

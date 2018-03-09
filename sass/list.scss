@@ -1,6 +1,6 @@
 .connect{
     width: 100%;
-    height: 3335px;
+    height: 3460px;
 
    
     
@@ -53,8 +53,7 @@
         .prod{
             width: 310px;
             float: left;
-            height: 400px;
-            cursor: pointer;
+            height: 410px;
          &:hover{
              background: #DCDCDC;
          }
@@ -63,12 +62,7 @@
               width: 310px;
               height: 200px;
               margin: 50px 0;
-              img{
-              width: 200px;
-              height: 200px; 
-              margin: 0 50px;
-
-              }
+              
           }
           .title{
               width: 315px;
@@ -86,12 +80,24 @@
           } 
           
            .price{
-              width: 315px;
+              width: 310px;
               height: 20px;
               text-align: center;
               line-height: 20px;
               font-size: 14px;
-          } 
+          }
+         .add_cart{
+              width: 85px;
+              height: 30px;
+              
+              text-align: center;
+              line-height: 30px;
+              font-size: 14px;
+              border: none;
+              background: red;
+              color: white;
+              
+          }   
           
         }
          

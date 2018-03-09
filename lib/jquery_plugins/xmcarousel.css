@@ -17,14 +17,16 @@
 	height: 30px;
 	position: absolute;
 	bottom: 0;
-	background: #000;
+	/*background: #000;*/
+	padding-left: 40%;
+	box-sizing: border-box;
 }
 .xmcarousel .pages i {
 	display: inline-block;
 	width:20px;
 	height: 20px;
-	border-radius: 10px;
-	background: #fff;
+	/*border-radius: 10px;*/
+	background:#b7b4b4;
 	margin:5px;
 }
 
@@ -35,7 +37,7 @@
 .xmcarousel .prev, .xmcarousel .next {
 	width: 45px;
 	height: 100px;
-	background: #000;
+	background:#b7b4b4;
 	color: #fff;
 	position: absolute;
 	top:0;
@@ -45,7 +47,18 @@
 	line-height: 100px;
 	font-size:40px;
 	cursor: pointer;
+	opacity:.3;
 }
+
+.xmcarousel .prev:hover{
+	opacity: 1;
+	
+}
+
+.xmcarousel .next:hover{
+	opacity: 1;
+}
+
 .xmcarousel .next {
 	right: 0;
 }

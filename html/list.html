@@ -5,7 +5,7 @@
 		<title></title>
 
 		<link rel="stylesheet" type="text/css" href="/project/css/list.css"/>
-		<link rel="stylesheet" type="text/css" href="/project/lib/jquery_plugins/xmcarousel.css"/>
+
 		<script src="/project/lib/requirejs/require.js" data-main="/project/js/index"></script>
 		<script src="/project/js/list.js"></script>
 		
@@ -23,16 +23,16 @@
 					{{each list as prod}}
 					<div class="prod">
 						<div class="id" style="display:none;">{{prod.id}}</div>
-						<div class="img"><img src="{{prod.img}}"></div>
+						<div class="img"><a href="/project/html/details.html" title="查看详情"><img src="{{prod.img}}"></a></div>
 						<div class="title">{{prod.title}}</div>
 						<div class="list">{{prod.list}}</div>
 						<div class="price">${{prod.price}}</div>
+						<button class="add_cart">加入购物车</button>
+						
 					</div>
 					{{/each}}
 				</script>
 			</div>		
-					
-				
 					
 				</li>
 				<li><a href="#">销量</a>
@@ -43,10 +43,12 @@
 					{{each list as prod}}
 					<div class="prod">
 						<div class="id" style="display:none;">{{prod.id}}</div>
-						<div class="img"><img src="{{prod.img}}"></div>
+						<img src="{{prod.img}}" class="img"/>
 						<div class="title">{{prod.title}}</div>
 						<div class="list">{{prod.list}}</div>
 						<div class="price">${{prod.price}}</div>
+						<button class="add_cart">加入购物车</button>
+						
 					</div>
 					{{/each}}
 				</script>
@@ -63,10 +65,12 @@
 					{{each list as prod}}
 					<div class="prod">
 						<div class="id" style="display:none;">{{prod.id}}</div>
-						<div class="img"><img src="{{prod.img}}"></div>
+						<div class="img"><a href="/project/html/details.html" title="查看详情"><img src="{{prod.img}}"></a></div>
 						<div class="title">{{prod.title}}</div>
 						<div class="list">{{prod.list}}</div>
 						<div class="price">${{prod.price}}</div>
+						<button class="add_cart">加入购物车</button>
+						
 					</div>
 					{{/each}}
 				</script>
@@ -81,10 +85,11 @@
 					{{each list as prod}}
 					<div class="prod">
 						<div class="id" style="display:none;">{{prod.id}}</div>
-						<div class="img"><img src="{{prod.img}}"></div>
+						<div class="img"><a href="/project/html/details.html" title="查看详情"><img src="{{prod.img}}"></a></div>
 						<div class="title">{{prod.title}}</div>
 						<div class="list">{{prod.list}}</div>
 						<div class="price">${{prod.price}}</div>
+						<button class="add_cart">加入购物车</button>
 					</div>
 					{{/each}}
 				</script>

@@ -1,6 +1,6 @@
 .connect {
   width: 100%;
-  height: 3335px; }
+  height: 3460px; }
   .connect .banner {
     width: 100%;
     height: 95px;
@@ -36,18 +36,13 @@
           .connect .ul li .flower .listed .prod {
             width: 310px;
             float: left;
-            height: 400px;
-            cursor: pointer; }
+            height: 410px; }
             .connect .ul li .flower .listed .prod:hover {
               background: #DCDCDC; }
             .connect .ul li .flower .listed .prod .img {
               width: 310px;
               height: 200px;
               margin: 50px 0; }
-              .connect .ul li .flower .listed .prod .img img {
-                width: 200px;
-                height: 200px;
-                margin: 0 50px; }
             .connect .ul li .flower .listed .prod .title {
               width: 315px;
               height: 30px;
@@ -61,11 +56,20 @@
               line-height: 20px;
               font-size: 14px; }
             .connect .ul li .flower .listed .prod .price {
-              width: 315px;
+              width: 310px;
               height: 20px;
               text-align: center;
               line-height: 20px;
               font-size: 14px; }
+            .connect .ul li .flower .listed .prod .add_cart {
+              width: 85px;
+              height: 30px;
+              text-align: center;
+              line-height: 30px;
+              font-size: 14px;
+              border: none;
+              background: red;
+              color: white; }
       .connect .ul li:hover {
         font-weight: bolder;
         background: #DCDCDC; }

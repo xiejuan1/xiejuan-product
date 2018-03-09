@@ -4,48 +4,11 @@
     .banner{
         width: 1118px;
         height: 405px;
-        border: 1px solid red;
+//      border: 1px solid red;
         margin: 0 auto;
        overflow: hidden;
         position: relative;
         font-size: 20px;
-        
-        .prev{
-            position: absolute;
-            left: 0;
-            top:180px;
-            width: 50px;
-            height:50px;
-            background: #C0C0C0;
-             border-radius: 50%;
-            text-align: center;
-            line-height: 50px;
-            color: white;
-            font-size: 20px;
-        }
-        .next{
-            position: absolute;
-            right: 0;
-            top:180px;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            text-align: center;
-            line-height: 50px;
-            color: white;
-            background: #C0C0C0; 
-        }
-        li{
-          width: 1118px;
-          float: left;
-           height: 405px;
-           
-           img{
-          width: 1118px;
-          height: 405px;
-               
-           }
-        }
     }
    .aside{
        width: 1118px;
@@ -106,7 +69,7 @@
           ul{
              height: 45px;
              width: 889px; 
-             position: relative;
+            
              
             li{
                 float: left;
@@ -118,11 +81,36 @@
                     border-left:none;
                     border-top: none;
                     
-              .box{
-                  position: absolute;
+             
+            } 
+          }
+          
+    .list{
+        width: 887px;
+        height:595px;
+//      background: red;
+        overflow: hidden;
+       
+    ul{
+        height: 595px;
+        height: 595px;
+        width:5880px ;
+	   animation:mymove 30s linear infinite ;
+         &:hover{
+            animation-play-state: paused;
+        }
+       li{
+          width: 890px;
+        height:596px;
+        float: left;  
+        
+        
+        
+.box{
+                  
                   height: 596px;
                   width: 890px;
-                  top:45px ;
+                  
                  
                 dl{
                     width: 222px;
@@ -161,9 +149,48 @@
                         }
                     }
                 }  
-              }  
-            } 
-          }
+              }
+        
+
+
+
+        
+        
+        
+        
+        
+        
+        
+        
+       } 
+    } 
+    
+   @keyframes mymove{
+                from{
+                    margin-left: 0px;
+                }
+                to{
+                    margin-left: -4435px;
+                }
+            }
+    
+       
+    }      
+          
+        
+        
+            
+        
+          
+        
+          
+          
+          
+          
+          
+          
+          
+          
       }
    }
    

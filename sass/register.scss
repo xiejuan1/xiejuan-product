@@ -10,7 +10,7 @@
    }
    .c_login{
        width: 398px;
-       height:463px;
+       height:510px;
        position: absolute;
        background:white;
        top: 50px;
@@ -37,7 +37,7 @@
                display: block;
                border:1px solid #DCDCDC ;
            }
-          .text{
+          .username{
               float: left;
                width: 243px;
                height: 45px;
@@ -46,12 +46,33 @@
           } 
        }
        
+     
+    .emal{
+           width: 290px;
+           height: 65px;
+           margin-top:20px ;
+           margin-left:55px;
+           
+      .email_info{
+          width: 290px;
+           height: 45px;
+           border: 1px solid #DCDCDC;
+      } 
+   .infos{
+         height: 20px;
+         width: 290px;
+         display: block;
+         font-size: 12px;
+         color: red;
+     }     
+    } 
+     
        
        
      .password{
            width: 290px;
-           height: 45px;
-           margin-top:20px ;
+           height: 65px;
+           
            margin-left:55px;
            
           .word{
@@ -61,6 +82,14 @@
                border:1px solid #DCDCDC;
                
           } 
+           .info{
+         height: 20px;
+         width: 290px;
+         font-size: 12px;
+         color: red;
+         display: block;
+         
+     } 
        }  
        
    
@@ -68,7 +97,7 @@
    .re_box{
            width: 290px;
            height: 45px;
-           margin-top:20px ;
+          
            margin-left:55px;
            padding: 0 30px;
            box-sizing: border-box;
@@ -105,16 +134,15 @@
     
     .code{
            width: 290px;
-           height: 45px;
-           margin-top:20px ;
+           height: 65px;
            margin-left:55px; 
-          border:1px solid #DCDCDC;
+//        border:1px solid #DCDCDC;
        .usercode{
            width: 180px;
-           height: 43px;
+           height: 45px;
            position: absolute;
            left:56px;
-           border: none;
+           border:1px solid #DCDCDC;
            
        }
        .codes{
@@ -133,8 +161,45 @@
            right:10px;
            text-align: center;
            font-size: 14px;
-       }    
+       }  
+        .info{
+         height: 20px;
+         width: 290px;
+         font-size: 12px;
+         color: red;
+         display: block;
+         
+     }   
     }
+    
+    
+    
+     .reg_form{
+        width: 290px;
+        margin:0 20px;
+        background: #D5D5D5;
+        height: 50px;
+        color: white;
+        text-align: center;
+        border: none;
+    }
+    
+    .register_foot{
+        width:398px;
+    height: 58px;
+    background: url(/project/images/1.svg) no-repeat scroll 15px center #c6c6c6;
+    background-size: 25% auto;
+    text-align: center;
+    line-height: 58px;
+    font-size: 16px;
+    position: absolute;
+    bottom: 0;
+    padding-left: 30px;
+    }
+    
+    
+    
+    
  }
 
 }
