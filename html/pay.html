@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="/project/css/pay.css"/>
+		<script src="/project/lib/requirejs/require.js" data-main="/project/js/index"></script>
+		<script src="/project/js/pay.js"></script>
+		
+	</head>
+	<body>
+		
+		<header></header>
+		
+		<div class="content">
+			<div class="order_nav">填写核对订单信息</div>
+			<div class="per_nav">收货人信息</div>
+			<div class="p"><label>点击添加新地址</label></div>
+			<div class="username"><span>收货人：</span> <input type="text" class="user"/></div>
+			<div class="phone"><span>手机号码：</span> <input type="text" class="userphone"/></div>
+			<div class="provinced">
+				<span>省份：</span>
+				<select class="province"></select>
+				<select class="city"></select>
+				<select class="county"></select>
+				
+			</div>
+			<div class="address"><span>地址：</span><input type="text" class="add" /></div>
+			<div class="postcode"><span>邮编:</span><input type="text" class="postcoded" /><span id="title">请你使用准确的邮编以便于你准时的收货</span></div>
+			
+			<div class="choice"><button class="del">取消</button><button class="save">保存</button></div>
+		</div>
+		<footer></footer>
+	</body>
+</html>

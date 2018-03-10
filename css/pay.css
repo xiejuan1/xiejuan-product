@@ -1,0 +1,142 @@
+.content {
+  width: 962px;
+  height: 1000px;
+  margin: 0 auto; }
+  .content .order_nav {
+    height: 70px;
+    width: 962px;
+    text-align: center;
+    line-height: 70px;
+    font-size: 30px; }
+  .content .per_nav {
+    height: 30px;
+    width: 962px;
+    border-bottom: 1px solid;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: bold; }
+  .content .p {
+    height: 70px;
+    width: 962px;
+    line-height: 70px;
+    font-size: 12px; }
+  .content .username {
+    height: 70px;
+    width: 962px;
+    line-height: 70px;
+    font-size: 12px; }
+    .content .username span {
+      float: left;
+      width: 100px;
+      height: 35px;
+      text-align: left;
+      line-height: 35px;
+      font-size: 14px; }
+    .content .username .user {
+      float: left;
+      width: 217px;
+      height: 35px; }
+  .content .phone {
+    height: 70px;
+    width: 962px;
+    line-height: 70px;
+    font-size: 12px; }
+    .content .phone span {
+      float: left;
+      width: 100px;
+      height: 35px;
+      text-align: left;
+      line-height: 35px;
+      font-size: 14px; }
+    .content .phone .userphone {
+      float: left;
+      width: 217px;
+      height: 35px; }
+  .content .provinced {
+    height: 70px;
+    width: 962px;
+    line-height: 70px;
+    font-size: 12px; }
+    .content .provinced span {
+      float: left;
+      width: 100px;
+      height: 35px;
+      text-align: left;
+      line-height: 35px;
+      font-size: 14px; }
+    .content .provinced .province {
+      float: left;
+      width: 145px;
+      height: 35px; }
+    .content .provinced .city {
+      float: left;
+      width: 145px;
+      height: 35px;
+      margin: 0 50px; }
+    .content .provinced .county {
+      float: left;
+      width: 145px;
+      height: 35px; }
+  .content .address {
+    height: 70px;
+    width: 962px;
+    line-height: 70px;
+    font-size: 12px; }
+    .content .address span {
+      float: left;
+      width: 100px;
+      height: 35px;
+      text-align: left;
+      line-height: 35px;
+      font-size: 14px; }
+    .content .address .add {
+      float: left;
+      width: 217px;
+      height: 35px; }
+  .content .postcode {
+    height: 70px;
+    width: 962px;
+    line-height: 70px;
+    font-size: 12px; }
+    .content .postcode span {
+      float: left;
+      width: 100px;
+      height: 35px;
+      text-align: left;
+      line-height: 35px;
+      font-size: 14px; }
+    .content .postcode .postcoded {
+      float: left;
+      width: 217px;
+      height: 35px; }
+    .content .postcode #title {
+      float: left;
+      width: 300px;
+      height: 35px;
+      text-align: left;
+      line-height: 35px;
+      font-size: 14px; }
+  .content .choice {
+    height: 70px;
+    width: 962px;
+    font-size: 12px; }
+    .content .choice .save {
+      float: right;
+      width: 80px;
+      height: 40px;
+      background: #DCDCDC;
+      border: none; }
+      .content .choice .save:hover {
+        opacity: .8; }
+    .content .choice .del {
+      float: right;
+      width: 80px;
+      height: 40px;
+      margin-left: 50px;
+      background: black;
+      color: white;
+      border: none; }
+      .content .choice .del:hover {
+        opacity: .6; }
+
+/*# sourceMappingURL=pay.css.map */

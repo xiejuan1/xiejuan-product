@@ -23,8 +23,8 @@ require(["config"], function(){
 		
 	$.getJSON("/project/mock/list2.json", function(data){
 			data = {list : data.res_body.data};
-			let html = template("list_t", data);
-			$($(".connect ul li")[2].children[1].children[0]).html(html);
+			let htmles = template("list_t", data);
+			$($(".connect ul li")[2].children[1].children[0]).html(htmles);
 		
 		});
 		
@@ -59,13 +59,12 @@ require(["config"], function(){
 		
 		$(".prod").on("click",".add_cart",function(){
 			//当前选购商品对象
-		console.log($(this).siblings(".img").attr("src"));
-
+		console.log($(this).siblings(".img").find("img").attr("src"));
 		let product = {
 			pid:$(this).siblings(".id").text(),
 			title:$(this).siblings(".title").text(),
-			list:$(this).siblings(".list").text(),
-			price:$(this).siblings(".img").attr("src"),
+			price:$(this).siblings(".price").text(),
+			img:$(this).siblings(".img").find("img").attr("src"),
 			amount:1
 		};
 

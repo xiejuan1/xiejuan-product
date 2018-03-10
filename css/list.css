@@ -42,7 +42,11 @@
             .connect .ul li .flower .listed .prod .img {
               width: 310px;
               height: 200px;
-              margin: 50px 0; }
+              margin: 50px 0;
+              overflow: hidden; }
+              .connect .ul li .flower .listed .prod .img img {
+                width: 200px;
+                height: 200px; }
             .connect .ul li .flower .listed .prod .title {
               width: 315px;
               height: 30px;

@@ -18,144 +18,174 @@
       float: left;
       height: 75px;
       font-size: 14px;
+      cursor: pointer;
       padding-top: 40px;
       box-sizing: border-box;
       background: url("/project/images/cart01.png") no-repeat left 43px;
       background-size: 12px 12px;
       text-align: center; }
-  .container .cart_body {
-    overflow: auto;
-    width: 970px;
+  .container .carts {
+    width: 1050px;
     overflow: hidden;
     margin: 0 auto; }
-    .container .cart_body .cart_title {
-      width: 973px;
+    .container .carts .cart_title {
+      width: 1050px;
       height: 30px;
       border-bottom: 1px solid; }
-      .container .cart_body .cart_title .id {
+      .container .carts .cart_title .id {
         height: 30px;
         text-align: center;
         line-height: 30px;
         float: left;
         font-size: 16px;
         width: 100px; }
-      .container .cart_body .cart_title .totalcheck {
+      .container .carts .cart_title .totalcheck {
         height: 30px;
         text-align: center;
         line-height: 30px;
         float: left;
         font-size: 16px;
         width: 100px; }
-      .container .cart_body .cart_title .img {
+      .container .carts .cart_title .img {
         height: 30px;
         text-align: center;
         line-height: 30px;
         float: left;
         font-size: 16px;
         width: 200px; }
-      .container .cart_body .cart_title .title {
+      .container .carts .cart_title .title {
         height: 30px;
         text-align: center;
         line-height: 30px;
         float: left;
         font-size: 16px;
         width: 200px; }
-      .container .cart_body .cart_title .price {
+      .container .carts .cart_title .price {
         height: 30px;
         text-align: center;
         line-height: 30px;
         float: left;
         font-size: 16px;
         width: 100px; }
-      .container .cart_body .cart_title .amount {
+      .container .carts .cart_title .amount {
         height: 30px;
         text-align: center;
         line-height: 30px;
         float: left;
         font-size: 16px;
         width: 150px; }
-      .container .cart_body .cart_title .price {
+      .container .carts .cart_title .sub {
         height: 30px;
         text-align: center;
         line-height: 30px;
         float: left;
         font-size: 16px;
         width: 100px; }
-    .container .cart_body .cart_main {
-      width: 960px;
-      height: 160px;
-      border-bottom: 1px solid; }
-      .container .cart_body .cart_main .id {
-        height: 160px;
+      .container .carts .cart_title .dleate {
+        height: 30px;
         text-align: center;
-        line-height: 160px;
+        line-height: 30px;
         float: left;
         font-size: 16px;
         width: 100px; }
-      .container .cart_body .cart_main .totalcheck {
+    .container .carts .cart_body {
+      width: 1050px;
+      overflow: hidden;
+      margin: 0 auto; }
+      .container .carts .cart_body .box {
+        width: 1050px;
         height: 160px;
-        text-align: center;
-        line-height: 160px;
-        float: left;
-        font-size: 16px;
-        width: 100px; }
-      .container .cart_body .cart_main .img {
-        height: 160px;
-        text-align: center;
-        line-height: 160px;
-        float: left;
-        font-size: 16px;
-        width: 200px; }
-      .container .cart_body .cart_main .title {
-        height: 160px;
-        text-align: center;
-        line-height: 160px;
-        float: left;
-        font-size: 16px;
-        width: 200px; }
-      .container .cart_body .cart_main .price {
-        height: 160px;
-        text-align: center;
-        line-height: 160px;
-        float: left;
-        font-size: 16px;
-        width: 100px; }
-      .container .cart_body .cart_main .amount {
-        height: 160px;
-        text-align: center;
-        line-height: 160px;
-        float: left;
-        font-size: 16px;
-        width: 150px; }
-      .container .cart_body .cart_main .price {
-        height: 160px;
-        text-align: center;
-        line-height: 160px;
-        float: left;
-        font-size: 16px;
-        width: 100px; }
-    .container .cart_body .cart_foot {
-      width: 980px;
+        border-bottom: 1px solid; }
+        .container .carts .cart_body .box .check {
+          height: 160px;
+          float: left;
+          width: 100px;
+          padding: 70px 40px; }
+        .container .carts .cart_body .box .uid {
+          height: 160px;
+          text-align: center;
+          line-height: 160px;
+          float: left;
+          font-size: 16px;
+          width: 100px; }
+        .container .carts .cart_body .box .img {
+          height: 160px;
+          text-align: center;
+          line-height: 160px;
+          float: left;
+          font-size: 16px;
+          width: 200px; }
+          .container .carts .cart_body .box .img img {
+            width: 150px;
+            height: 150px; }
+        .container .carts .cart_body .box .small_title {
+          height: 160px;
+          text-align: center;
+          line-height: 160px;
+          float: left;
+          font-size: 16px;
+          width: 200px; }
+        .container .carts .cart_body .box .price {
+          height: 160px;
+          text-align: center;
+          line-height: 160px;
+          float: left;
+          font-size: 16px;
+          width: 100px; }
+        .container .carts .cart_body .box .amount {
+          height: 160px;
+          text-align: center;
+          line-height: 160px;
+          float: left;
+          font-size: 16px;
+          width: 150px;
+          padding: 68px 30px;
+          box-sizing: border-box; }
+          .container .carts .cart_body .box .amount .minus {
+            float: left; }
+          .container .carts .cart_body .box .amount .amounts {
+            float: left;
+            width: 30px;
+            text-align: center;
+            height: 21px; }
+          .container .carts .cart_body .box .amount .add {
+            float: left; }
+        .container .carts .cart_body .box .sub {
+          height: 160px;
+          text-align: center;
+          line-height: 160px;
+          float: left;
+          font-size: 16px;
+          width: 100px; }
+        .container .carts .cart_body .box .dleate {
+          height: 160px;
+          text-align: center;
+          line-height: 160px;
+          float: left;
+          font-size: 16px;
+          width: 100px; }
+    .container .carts .cart_foot {
+      width: 1050px;
       height: 65px;
       margin: 0 auto; }
-      .container .cart_body .cart_foot .total {
+      .container .carts .cart_foot .total {
         width: 170px;
         height: 65px;
         float: left; }
-        .container .cart_body .cart_foot .total span {
+        .container .carts .cart_foot .total span {
           display: block;
           width: 50px;
           height: 65px;
           float: left;
           text-align: center;
           line-height: 65px; }
-        .container .cart_body .cart_foot .total .totalmoney {
+        .container .carts .cart_foot .total .totalmoney {
           width: 120px;
           height: 65px;
           float: left;
           text-align: center;
           line-height: 65px; }
-      .container .cart_body .cart_foot .pay {
+      .container .carts .cart_foot .pay {
         float: right;
         width: 100px;
         height: 65px;

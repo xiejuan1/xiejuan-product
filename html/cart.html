@@ -3,51 +3,48 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		
 		<link rel="stylesheet" type="text/css" href="/project/css/cart.css"/>
-	
 		<script src="/project/lib/requirejs/require.js" data-main="/project/js/index"></script>
-		<script src="/project/js/cart.js">
 		
+		<script src="/project/js/cart.js"></script>
 	</head>
 	<body>
 		<header></header>
+
 		<div class="container">
 			<div class="order">
 				<div class="my_cart">我的购物车</div>
 				<div class="clear">清空购物车</div>
 			</div>
-			<div class="cart_body">
-				
-				
+			<div class="carts">
 				<div class="cart_title">
-					<div class="totalcheck"><input type="checkbox" class="ck_prod">全选</div>
+					<div class="totalcheck"><input type="checkbox" class="ck_all">全选</div>
 					<div class="id">序号</div>
 					<div class="img">图片</div>
 					<div class="title">商品名称</div>
 					<div class="price">单价</div>
 					<div class="amount">数量</div>
-					<div class="price">价格</div>
+					<div class="sub">总价</div>
+					<div class="dleate">操作</div>
 				</div>
-
-
-
-					<script type="text/html" id="carts">
-						{{each products as prod}}
-				<div class="cart_main">
-					<div class="check"><input type="checkbox" class="ck_prod"></div>
-					<div class="id">{{prod.pid}}</div>
-					<div class="img">{{prod.img}}</div>
-					<div class="title">{{prod.title}}</div>
-					<div class="amount"><button class="minus">-</button><input type="text" value="{{prod.amount}}" size="2" class="amount"><button class="add">+</button></div>
-					<div class="price">{{prod.price}}</div>
-					</div>
-					
-						{{/each}}
-					</script>
+			<!--动态生成商品-->
+			<div class="cart_body">
+	   </div>	
+	<script type="text/html" id="cart_template">
+		{{each products as prod}}
+			<div class="box">
+    		<div class="check"><input type="checkbox" class="ck_prod"></div>
+    		<div class="uid">{{prod.pid}}</div>
+    		<div class="img"><img src="{{prod.img}}"></div>
+    		<div class="small_title">{{prod.title}}</div>
+    		<div class="price">{{prod.price}}</div>
+    		<div class="amount"><button class="minus">-</button><input type="text" value="{{prod.amount}}" class="amounts"><button class="add">+</button></div>
+    		<div class="sub">{{(prod.amount*prod.price).toFixed(2)}}</div>
+    		<div class="dleate"><a href="javascript:void(0);" class="del">删除</a></div>
+    	</div>
+    	{{/each}}  	
+	</script>
 				
-			
-			
 			
 			<div class="cart_foot">
 				<div class="total"><span>合计：</span><div class="totalmoney"></div></div>
@@ -64,6 +61,7 @@
 				<p>如果您在下单过程中遇到问题，请与我们联系。因为鲜花商品对配送时效有特殊要求，订购后请随时登录查询物流状态。</p>
 			</div>
 		</div>
+		
 		<footer></footer>
 	</body>
 </html>

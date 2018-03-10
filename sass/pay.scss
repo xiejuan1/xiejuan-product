@@ -1,0 +1,190 @@
+.content{
+    width: 962px;
+    height: 1000px;
+    margin: 0 auto;
+    .order_nav{
+        height: 70px;
+        width: 962px;
+        text-align: center;
+        line-height: 70px;
+        font-size: 30px;
+       
+    }
+    
+    .per_nav{
+        height: 30px;
+        width: 962px;
+        border-bottom: 1px solid;
+        line-height: 30px;
+        font-size: 20px;
+        font-weight: bold;
+       
+    }
+    .p{
+        height: 70px;
+        width: 962px;
+        line-height: 70px;
+        font-size: 12px;
+       
+    }
+    
+    .username{
+         height: 70px;
+        width: 962px;
+        line-height: 70px;
+        font-size: 12px;
+        span{
+            float: left;
+            width: 100px;
+            height: 35px;
+            text-align: left;
+            line-height: 35px;
+            font-size: 14px;
+        }
+        .user{
+            float: left;
+            width: 217px;
+            height: 35px;
+        }
+    }
+    
+    
+   .phone{
+         height: 70px;
+        width: 962px;
+        line-height: 70px;
+        font-size: 12px;
+        span{
+            float: left;
+            width: 100px;
+            height: 35px;
+            text-align: left;
+            line-height: 35px;
+            font-size: 14px;
+        }
+        .userphone{
+            float: left;
+            width: 217px;
+            height: 35px;
+        }
+    }
+     
+   
+   .provinced{
+         height: 70px;
+        width: 962px;
+        line-height: 70px;
+        font-size: 12px;
+        span{
+            float: left;
+            width: 100px;
+            height: 35px;
+            text-align: left;
+            line-height: 35px;
+            font-size: 14px;
+        }
+        .province{
+            float: left;
+            width: 145px;
+            height: 35px;
+        }
+        
+         .city{
+            float: left;
+            width: 145px;
+            height: 35px;
+            margin: 0 50px;
+        }
+        
+         .county{
+            float: left;
+            width: 145px;
+            height: 35px;
+        }
+    }
+    
+  
+  
+  .address{
+         height: 70px;
+        width: 962px;
+        line-height: 70px;
+        font-size: 12px;
+        span{
+            float: left;
+            width: 100px;
+            height: 35px;
+            text-align: left;
+            line-height: 35px;
+            font-size: 14px;
+        }
+        .add{
+            float: left;
+            width: 217px;
+            height: 35px;
+        }
+    }
+      
+   
+   
+   .postcode{
+         height: 70px;
+        width: 962px;
+        line-height: 70px;
+        font-size: 12px;
+        span{
+            float: left;
+            width: 100px;
+            height: 35px;
+            text-align: left;
+            line-height: 35px;
+            font-size: 14px;
+        }
+        .postcoded{
+            float: left;
+            width: 217px;
+            height: 35px;
+        }
+        
+        #title{
+            float: left;
+            width: 300px;
+            height: 35px;
+            text-align: left;
+            line-height: 35px;
+            font-size: 14px;
+        } 
+    }
+  
+  
+  .choice{
+         height: 70px;
+        width: 962px;
+        
+        font-size: 12px;
+        .save{
+           float: right;
+           width: 80px;
+           height: 40px; 
+           background: #DCDCDC;
+           border: none;
+           &:hover{
+               opacity: .8;
+           }
+        }
+        .del{
+            float: right;
+            width: 80px;
+            height: 40px;
+           margin-left: 50px; 
+            background: black;
+            color: white;
+            border: none;
+            
+           &:hover{
+               opacity: .6;
+           } 
+        }
+        
+        }    
+}
