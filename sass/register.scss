@@ -72,7 +72,7 @@
      .password{
            width: 290px;
            height: 65px;
-           
+           position: relative;
            margin-left:55px;
            
           .word{
@@ -82,9 +82,11 @@
                border:1px solid #DCDCDC;
                
           } 
-           .info{
+           .pa{
          height: 20px;
          width: 290px;
+         position: absolute;
+         top: 45px;
          font-size: 12px;
          color: red;
          display: block;
@@ -136,19 +138,19 @@
            width: 290px;
            height: 65px;
            margin-left:55px; 
+           position: relative;
 //        border:1px solid #DCDCDC;
        .usercode{
            width: 180px;
            height: 45px;
-           position: absolute;
-           left:56px;
+           float: left;
            border:1px solid #DCDCDC;
            
        }
        .codes{
            height: 45px;
            width:110px ;
-           float: right;
+           float:left;
            background: #DCDCDC;
            text-align: center;
            line-height: 45px;
@@ -158,15 +160,17 @@
            height: 45px;
            width: 42px;
            line-height: 45px;
-           right:10px;
+          right: -45px;
            text-align: center;
            font-size: 14px;
        }  
-        .info{
+        .co{
          height: 20px;
          width: 290px;
          font-size: 12px;
+         position: absolute;
          color: red;
+         top:45px;
          display: block;
          
      }   

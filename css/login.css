@@ -59,7 +59,7 @@
     .connect .re_box h6 {
       font-size: 16px;
       font-weight: normal; }
-  .connect button {
+  .connect .login_form {
     width: 290px;
     margin: 0 20px;
     background: #D5D5D5;

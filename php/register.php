@@ -3,7 +3,6 @@
 	$email = $_POST["email"];
 	$password = $_POST["password"];
 	$firstname = $_POST["firstname"];
-	$lastname = $_POST["lastname"];
 
 	/* 向数据库中保存注册的用户信息 */
 	// 连接服务器
@@ -16,13 +15,13 @@
 	// 选择数据库
 	mysql_select_db("h51710");
 	// 创建插入语句
-	$sql = "INSERT INTO mall_users (email, password, firstname, lastname) VALUES('$email', '$password', '$firstname', '$lastname')";
+	$sql = "INSERT INTO mall_users (email, password, firstname) VALUES('$email', '$password', '$firstname')";
 	// 执行SQL语句，返回执行结果，true表示执行成功，false表示执行失败
 	$result = mysql_query($sql);
 
 	// 判断是否注册成功
 	if ($result) {
-		$sql = "SELECT uid, email, firstname, lastname, score, level, createtime FROM mall_users WHERE email='$email'";
+		$sql = "SELECT uid, email, firstname, score, level, createtime FROM mall_users WHERE email='$email'";
 		$result = mysql_query($sql);
 		if ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
 			echo '{"res_code":0, "res_error":"", "res_body":'. json_encode($row) .'}';
