@@ -40,7 +40,7 @@ require(["config"],function(){
 	
 	// 加载城市
 		function loadCity() {
-			let _parentId = $(".province").value;
+			let _parentId = $(".province").val();
 			console.log(_parentId);
 			if (_parentId == -1)
 				return;
@@ -68,18 +68,232 @@ require(["config"],function(){
 		$(".province").change(loadCity);
 	
 	
+	//配送方式
+	$(".ziqu").on("click","#checked",function(){
+		$(".top").css("display","none");
+		$(".bottom").css("display","block");
+	})
+	
+	$(".h30").on("click","#check",function(){
+		$(".top").css("display","block");
+		$(".bottom").css("display","none");
+	})
+	$(".p").click(function(){
+		$(".top").css("display","block");
+		$(".bottom").css("display","none");
+	});
+	
+	let isExist = true;
+	//验证收货人信息
+	$(".user").blur(function(){
+		let reg = /^[\u4e00-\u9fa5]{0,}$/;
+		if(!reg.test($(".user").val())){
+			isExist = false;
+			$(".userinfo").text("请输入正确的用户信息");
+		}else{
+			$(".userinfo").text(" ");
+			isExist = true;
+		}
+	});
+	//验证电话号码
+	$(".userphone").blur(function(){
+		console.log($(".phoneinfo")[0]);
+		let reg =/^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\d{8}$/;
+		if(!reg.test($(".userphone").val())){
+			isExist = false;
+			$(".phoneinfo").text("请输入正确的电话格式");
+		}else{
+			$(".phoneinfo").text(" ");
+			isExist = true;
+		}
+	});
+	
+	
+	//保存收货人信息
+	$(".save").click(function(){
+		
+		let _consignee = $(".user").val(),
+			_phone = $(".userphone").val(),
+			_address = $(".add").val();
+			if(isExist){
+	$.post("/project/php/pay.php",{"consignee":_consignee,"phone":_phone,"address":_address},function(data){
+		console.log(data);
+		$.cookie,json = true;
+		$.cookie("pay",data.res_body,{path:"/"});
+		alert("保存成功")
+	},"json");
+	}else{
+			
+			alert("收货人信息保存失败，请稍后重试...");
+		}
+	
+	});
+	
+	
+	//验证电话号码
+	$(".tel").blur(function(){
+	
+		let reg =/^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\d{8}$/;
+		if(!reg.test($(".tel").val())){
+			
+			$(".info").text("请输入正确的电话格式");
+		}else{
+			$(".info").text(" ");
+			
+		}
+	});
+	//select改变对应的地址改变
+	$("#select").change(function(){
+	let value = $("#select :selected").val();
+	console.log(value);
+	if(value == "北京"){
+		$(".box").css("display","block");
+		$(".box1").css("display","none");
+		$(".box2").css("display","none");
+		$(".box3").css("display","none");
+		$(".box4").css("display","none");
+		$(".box5").css("display","none");
+		$(".box6").css("display","none");
+		$(".box7").css("display","none");
+		$(".box8").css("display","none");
+		$(".box9").css("display","none");
+		$(".box10").css("display","none");	
+	}
+	if(value == "天津"){
+		$(".box").css("display","none");
+		$(".box1").css("display","block");
+		$(".box2").css("display","none");
+		$(".box3").css("display","none");
+		$(".box4").css("display","none");
+		$(".box5").css("display","none");
+		$(".box6").css("display","none");
+		$(".box7").css("display","none");
+		$(".box8").css("display","none");
+		$(".box9").css("display","none");
+		$(".box10").css("display","none");	
+	}
+	if(value == "上海"){
+		$(".box").css("display","none");
+		$(".box1").css("display","none");
+		$(".box2").css("display","block");
+		$(".box3").css("display","none");
+		$(".box4").css("display","none");
+		$(".box5").css("display","none");
+		$(".box6").css("display","none");
+		$(".box7").css("display","none");
+		$(".box8").css("display","none");
+		$(".box9").css("display","none");
+		$(".box10").css("display","none");	
+	}
+	if(value == "重庆"){
+		$(".box").css("display","none");
+		$(".box1").css("display","none");
+		$(".box2").css("display","none");
+		$(".box3").css("display","block");
+		$(".box4").css("display","none");
+		$(".box5").css("display","none");
+		$(".box6").css("display","none");
+		$(".box7").css("display","none");
+		$(".box8").css("display","none");
+		$(".box9").css("display","none");
+		$(".box10").css("display","none");	
+	}
+	if(value == "河北省"){
+		$(".box").css("display","none");
+		$(".box1").css("display","none");
+		$(".box2").css("display","none");
+		$(".box3").css("display","none");
+		$(".box4").css("display","block");
+		$(".box5").css("display","none");
+		$(".box6").css("display","none");
+		$(".box7").css("display","none");
+		$(".box8").css("display","none");
+		$(".box9").css("display","none");
+		$(".box10").css("display","none");	
+	}
+	if(value == "山西省"){
+		$(".box").css("display","none");
+		$(".box1").css("display","none");
+		$(".box2").css("display","none");
+		$(".box3").css("display","none");
+		$(".box4").css("display","none");
+		$(".box5").css("display","block");
+		$(".box6").css("display","none");
+		$(".box7").css("display","none");
+		$(".box8").css("display","none");
+		$(".box9").css("display","none");
+		$(".box10").css("display","none");	
+	}
+	if(value == "辽宁省"){
+		$(".box").css("display","none");
+		$(".box1").css("display","none");
+		$(".box2").css("display","none");
+		$(".box3").css("display","none");
+		$(".box4").css("display","none");
+		$(".box5").css("display","none");
+		$(".box6").css("display","block");
+		$(".box7").css("display","none");
+		$(".box8").css("display","none");
+		$(".box9").css("display","none");
+		$(".box10").css("display","none");	
+	}
+	if(value == "江苏省"){
+		$(".box").css("display","none");
+		$(".box1").css("display","none");
+		$(".box2").css("display","none");
+		$(".box3").css("display","none");
+		$(".box4").css("display","none");
+		$(".box5").css("display","none");
+		$(".box6").css("display","none");
+		$(".box7").css("display","block");
+		$(".box8").css("display","none");
+		$(".box9").css("display","none");
+		$(".box10").css("display","none");	
+	}
+	if(value == "浙江省"){
+		$(".box").css("display","none");
+		$(".box1").css("display","none");
+		$(".box2").css("display","none");
+		$(".box3").css("display","none");
+		$(".box4").css("display","none");
+		$(".box5").css("display","none");
+		$(".box6").css("display","none");
+		$(".box7").css("display","none");
+		$(".box8").css("display","block");
+		$(".box9").css("display","none");
+		$(".box10").css("display","none");	
+	}
+	if(value == "安徽省"){
+		$(".box").css("display","none");
+		$(".box1").css("display","none");
+		$(".box2").css("display","none");
+		$(".box3").css("display","none");
+		$(".box4").css("display","none");
+		$(".box5").css("display","none");
+		$(".box6").css("display","none");
+		$(".box7").css("display","none");
+		$(".box8").css("display","none");
+		$(".box9").css("display","block");
+		$(".box10").css("display","none");	
+	}
+	if(value == "福建省"){
+		$(".box").css("display","none");
+		$(".box1").css("display","none");
+		$(".box2").css("display","none");
+		$(".box3").css("display","none");
+		$(".box4").css("display","none");
+		$(".box5").css("display","none");
+		$(".box6").css("display","none");
+		$(".box7").css("display","none");
+		$(".box8").css("display","none");
+		$(".box9").css("display","none");
+		$(".box10").css("display","block");	
+	}
 	
 	
 	
+	});
 	
 	
-	
-	
-	
-	
-	
-	
-	
-					
 	});
 })

@@ -1,6 +1,6 @@
 .content {
   width: 962px;
-  height: 1000px;
+  overflow: hidden;
   margin: 0 auto; }
   .content .order_nav {
     height: 70px;
@@ -20,123 +20,476 @@
     width: 962px;
     line-height: 70px;
     font-size: 12px; }
-  .content .username {
-    height: 70px;
-    width: 962px;
-    line-height: 70px;
-    font-size: 12px; }
-    .content .username span {
+  .content .top {
+    width: 960px;
+    height: 495px; }
+    .content .top .username {
+      height: 70px;
+      width: 962px;
+      line-height: 70px;
+      font-size: 12px; }
+      .content .top .username span {
+        float: left;
+        width: 100px;
+        height: 35px;
+        text-align: left;
+        line-height: 35px;
+        font-size: 14px; }
+      .content .top .username .user {
+        float: left;
+        width: 217px;
+        height: 35px; }
+      .content .top .username .userinfo {
+        float: left;
+        width: 217px;
+        height: 35px;
+        font-size: 14px;
+        line-height: 35px;
+        text-align: center;
+        color: red; }
+    .content .top .phone {
+      height: 70px;
+      width: 962px;
+      line-height: 70px;
+      font-size: 12px; }
+      .content .top .phone span {
+        float: left;
+        width: 100px;
+        height: 35px;
+        text-align: left;
+        line-height: 35px;
+        font-size: 14px; }
+      .content .top .phone .userphone {
+        float: left;
+        width: 217px;
+        height: 35px; }
+      .content .top .phone .phoneinfo {
+        float: left;
+        width: 217px;
+        height: 35px;
+        font-size: 14px;
+        color: red;
+        line-height: 35px;
+        text-align: center; }
+    .content .top .provinced {
+      height: 70px;
+      width: 962px;
+      line-height: 70px;
+      font-size: 12px; }
+      .content .top .provinced span {
+        float: left;
+        width: 100px;
+        height: 35px;
+        text-align: left;
+        line-height: 35px;
+        font-size: 14px; }
+      .content .top .provinced .province {
+        float: left;
+        width: 145px;
+        height: 35px; }
+      .content .top .provinced .city {
+        float: left;
+        width: 145px;
+        height: 35px;
+        margin: 0 50px; }
+      .content .top .provinced .county {
+        float: left;
+        width: 145px;
+        height: 35px; }
+    .content .top .address {
+      height: 70px;
+      width: 962px;
+      line-height: 70px;
+      font-size: 12px; }
+      .content .top .address span {
+        float: left;
+        width: 100px;
+        height: 35px;
+        text-align: left;
+        line-height: 35px;
+        font-size: 14px; }
+      .content .top .address .add {
+        float: left;
+        width: 217px;
+        height: 35px; }
+    .content .top .postcode {
+      height: 70px;
+      width: 962px;
+      line-height: 70px;
+      font-size: 12px; }
+      .content .top .postcode span {
+        float: left;
+        width: 100px;
+        height: 35px;
+        text-align: left;
+        line-height: 35px;
+        font-size: 14px; }
+      .content .top .postcode .postcoded {
+        float: left;
+        width: 217px;
+        height: 35px; }
+      .content .top .postcode #title {
+        float: left;
+        width: 300px;
+        height: 35px;
+        text-align: left;
+        line-height: 35px;
+        font-size: 14px;
+        margin-left: 20px; }
+    .content .top .choice {
+      height: 70px;
+      width: 962px;
+      font-size: 12px; }
+      .content .top .choice .save {
+        float: right;
+        width: 80px;
+        height: 40px;
+        background: #DCDCDC;
+        border: none; }
+        .content .top .choice .save:hover {
+          opacity: .8; }
+      .content .top .choice .del {
+        float: right;
+        width: 80px;
+        height: 40px;
+        margin-left: 50px;
+        background: black;
+        color: white;
+        border: none; }
+        .content .top .choice .del:hover {
+          opacity: .6; }
+  .content .method {
+    width: 960px;
+    height: 32px;
+    border-bottom: 1px solid;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 32px; }
+  .content .payment {
+    width: 960px;
+    height: 27px;
+    font-size: 14px;
+    line-height: 27px; }
+  .content .h30 {
+    width: 960px;
+    height: 32px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 32px; }
+    .content .h30 span {
       float: left;
-      width: 100px;
-      height: 35px;
-      text-align: left;
-      line-height: 35px;
-      font-size: 14px; }
-    .content .username .user {
-      float: left;
-      width: 217px;
-      height: 35px; }
-  .content .phone {
-    height: 70px;
-    width: 962px;
-    line-height: 70px;
-    font-size: 12px; }
-    .content .phone span {
-      float: left;
-      width: 100px;
-      height: 35px;
-      text-align: left;
-      line-height: 35px;
-      font-size: 14px; }
-    .content .phone .userphone {
-      float: left;
-      width: 217px;
-      height: 35px; }
-  .content .provinced {
-    height: 70px;
-    width: 962px;
-    line-height: 70px;
-    font-size: 12px; }
-    .content .provinced span {
-      float: left;
-      width: 100px;
-      height: 35px;
-      text-align: left;
-      line-height: 35px;
-      font-size: 14px; }
-    .content .provinced .province {
-      float: left;
-      width: 145px;
-      height: 35px; }
-    .content .provinced .city {
-      float: left;
-      width: 145px;
-      height: 35px;
-      margin: 0 50px; }
-    .content .provinced .county {
-      float: left;
-      width: 145px;
-      height: 35px; }
-  .content .address {
-    height: 70px;
-    width: 962px;
-    line-height: 70px;
-    font-size: 12px; }
-    .content .address span {
-      float: left;
-      width: 100px;
-      height: 35px;
-      text-align: left;
-      line-height: 35px;
-      font-size: 14px; }
-    .content .address .add {
-      float: left;
-      width: 217px;
-      height: 35px; }
-  .content .postcode {
-    height: 70px;
-    width: 962px;
-    line-height: 70px;
-    font-size: 12px; }
-    .content .postcode span {
-      float: left;
-      width: 100px;
-      height: 35px;
-      text-align: left;
-      line-height: 35px;
-      font-size: 14px; }
-    .content .postcode .postcoded {
-      float: left;
-      width: 217px;
-      height: 35px; }
-    .content .postcode #title {
-      float: left;
-      width: 300px;
-      height: 35px;
-      text-align: left;
-      line-height: 35px;
-      font-size: 14px; }
-  .content .choice {
-    height: 70px;
-    width: 962px;
-    font-size: 12px; }
-    .content .choice .save {
-      float: right;
+      height: 32px;
       width: 80px;
+      line-height: 32px;
+      font-size: 14px; }
+    .content .h30 #check {
+      float: left;
+      line-height: 32px;
+      height: 32px;
+      margin: 0 20px; }
+    .content .h30 label {
+      width: 63px;
+      height: 32px;
+      line-height: 32px;
+      font-size: 14px;
+      float: left; }
+    .content .h30 .pay_ysf {
+      width: 304px;
+      height: 32px;
+      float: left;
+      font-weight: normal;
+      line-height: 32px;
+      font-size: 14px;
+      color: #DCDCDC; }
+  .content .ziqu {
+    height: 32px;
+    width: 960px;
+    padding-left: 98px;
+    box-sizing: border-box;
+    line-height: 32px; }
+    .content .ziqu span {
+      font-size: 14px;
+      height: 32px;
+      margin-left: 20px;
+      font-weight: bold; }
+  .content .bottom {
+    width: 960px;
+    overflow: hidden;
+    display: none; }
+    .content .bottom .Tel {
+      width: 960px;
+      height: 35px; }
+      .content .bottom .Tel span {
+        height: 35px;
+        width: 100px;
+        line-height: 35px;
+        font-size: 14px;
+        float: left; }
+      .content .bottom .Tel .tel {
+        float: left;
+        width: 220px;
+        height: 35px; }
+      .content .bottom .Tel .info {
+        height: 35px;
+        float: left;
+        width: 300px;
+        color: red;
+        line-height: 35px; }
+    .content .bottom .shaixuan {
+      width: 960px;
+      overflow: hidden;
+      margin-top: 30px; }
+      .content .bottom .shaixuan .xuan {
+        width: 960px;
+        height: 35px; }
+        .content .bottom .shaixuan .xuan span {
+          width: 98px;
+          height: 35px;
+          float: left;
+          display: block;
+          line-height: 35px; }
+        .content .bottom .shaixuan .xuan select {
+          width: 220px;
+          height: 35px;
+          float: left; }
+      .content .bottom .shaixuan .box {
+        width: 960px;
+        height: 300px;
+        font-size: 14px;
+        margin-top: 20px;
+        padding-left: 20px;
+        box-sizing: border-box;
+        line-height: 35px; }
+      .content .bottom .shaixuan .box1 {
+        width: 960px;
+        height: 82px;
+        font-size: 14px;
+        display: none;
+        margin-top: 20px;
+        padding-left: 20px;
+        box-sizing: border-box;
+        line-height: 35px; }
+      .content .bottom .shaixuan .box2 {
+        width: 960px;
+        height: 114px;
+        font-size: 14px;
+        margin-top: 20px;
+        padding-left: 20px;
+        box-sizing: border-box;
+        line-height: 35px;
+        display: none; }
+      .content .bottom .shaixuan .box3 {
+        width: 960px;
+        height: 82px;
+        font-size: 14px;
+        display: none;
+        margin-top: 20px;
+        padding-left: 20px;
+        box-sizing: border-box;
+        line-height: 35px; }
+      .content .bottom .shaixuan .box4 {
+        width: 960px;
+        height: 42px;
+        font-size: 14px;
+        display: none;
+        margin-top: 20px;
+        padding-left: 20px;
+        box-sizing: border-box;
+        line-height: 35px; }
+      .content .bottom .shaixuan .box5 {
+        width: 960px;
+        height: 42px;
+        font-size: 14px;
+        display: none;
+        margin-top: 20px;
+        padding-left: 20px;
+        box-sizing: border-box;
+        line-height: 35px; }
+      .content .bottom .shaixuan .box6 {
+        width: 960px;
+        height: 82px;
+        font-size: 14px;
+        display: none;
+        margin-top: 20px;
+        padding-left: 20px;
+        box-sizing: border-box;
+        line-height: 35px; }
+      .content .bottom .shaixuan .box7 {
+        width: 960px;
+        height: 114px;
+        font-size: 14px;
+        margin-top: 20px;
+        padding-left: 20px;
+        box-sizing: border-box;
+        line-height: 35px;
+        display: none; }
+      .content .bottom .shaixuan .box8 {
+        width: 960px;
+        height: 154px;
+        font-size: 14px;
+        margin-top: 20px;
+        padding-left: 20px;
+        box-sizing: border-box;
+        line-height: 35px;
+        display: none; }
+      .content .bottom .shaixuan .box9 {
+        width: 960px;
+        height: 42px;
+        font-size: 14px;
+        display: none;
+        margin-top: 20px;
+        padding-left: 20px;
+        box-sizing: border-box;
+        line-height: 35px; }
+      .content .bottom .shaixuan .box10 {
+        width: 960px;
+        height: 42px;
+        font-size: 14px;
+        display: none;
+        margin-top: 20px;
+        padding-left: 20px;
+        box-sizing: border-box;
+        line-height: 35px; }
+  .content .per_nav {
+    width: 960px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid; }
+  .content .list {
+    width: 960px;
+    height: 190px;
+    box-sizing: border-box;
+    padding: 30px 0; }
+    .content .list .left {
+      height: 125px;
+      width: 400px;
+      float: left;
+      border-right: 1px solid; }
+      .content .list .left .list_img {
+        float: left;
+        height: 125px;
+        width: 125px; }
+        .content .list .left .list_img img {
+          width: 100px;
+          height: 100px; }
+      .content .list .left .list_left {
+        width: 274px;
+        float: left;
+        height: 125px;
+        font-size: 12px; }
+        .content .list .left .list_left p {
+          height: 20px;
+          width: 274px;
+          line-height: 20px; }
+    .content .list .right {
+      float: left;
+      width: 550px;
+      height: 125px;
+      font-size: 14px;
+      padding-left: 20px;
+      box-sizing: border-box; }
+      .content .list .right p {
+        width: 500px;
+        height: 20px;
+        line-height: 20px; }
+      .content .list .right .day {
+        width: 500px;
+        height: 40px; }
+        .content .list .right .day span {
+          float: left;
+          height: 35px;
+          line-height: 35px; }
+        .content .list .right .day .days {
+          float: left;
+          height: 35px;
+          width: 220px; }
+        .content .list .right .day .dan {
+          float: left;
+          line-height: 35px;
+          margin-left: 10px;
+          margin-top: 10px; }
+        .content .list .right .day label {
+          float: left;
+          height: 35px;
+          line-height: 35px; }
+  .content .leave {
+    width: 960px;
+    height: 170px;
+    padding: 30px 0;
+    box-sizing: border-box; }
+    .content .leave .left {
+      width: 400px;
+      border-right: 1px solid;
+      height: 125px;
+      float: left; }
+      .content .leave .left div {
+        width: 300px;
+        height: 96px;
+        margin-top: 25px; }
+    .content .leave .right {
+      float: left;
+      width: 550px;
+      height: 125px;
+      font-size: 14px;
+      padding-left: 20px;
+      box-sizing: border-box; }
+      .content .leave .right span {
+        width: 174px;
+        height: 120px;
+        float: left;
+        line-height: 120px;
+        font-size: 14px;
+        text-align: center; }
+      .content .leave .right img {
+        float: left; }
+  .content .youhuiquan {
+    width: 960px;
+    height: 170px;
+    position: relative;
+    border-bottom: 5px solid; }
+    .content .youhuiquan .you {
+      width: 960px;
+      height: 96px;
+      padding: 30px 0;
+      box-sizing: border-box; }
+      .content .youhuiquan .you span {
+        height: 35px;
+        width: 100px;
+        line-height: 35px;
+        font-size: 14px;
+        float: left; }
+      .content .youhuiquan .you .hui {
+        height: 36px;
+        width: 220px;
+        float: left; }
+      .content .youhuiquan .you .quan {
+        width: 220px;
+        color: red;
+        font-size: 14px;
+        text-align: center;
+        line-height: 35px;
+        height: 35px; }
+    .content .youhuiquan .total {
+      width: 960px;
+      height: 36px;
+      font-size: 14px;
+      position: absolute;
+      bottom: 0; }
+      .content .youhuiquan .total span {
+        float: right;
+        font-weight: bold; }
+  .content .ti {
+    width: 960px;
+    height: 40px;
+    margin: 20px 0; }
+    .content .ti button {
       height: 40px;
-      background: #DCDCDC;
-      border: none; }
-      .content .choice .save:hover {
-        opacity: .8; }
-    .content .choice .del {
+      width: 200px;
       float: right;
-      width: 80px;
-      height: 40px;
-      margin-left: 50px;
       background: black;
       color: white;
       border: none; }
-      .content .choice .del:hover {
-        opacity: .6; }
 
 /*# sourceMappingURL=pay.css.map */

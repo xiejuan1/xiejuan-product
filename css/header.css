@@ -55,7 +55,7 @@ a {
         color: #414141;
         cursor: pointer;
         list-style: none;
-        background: url(/product/images/san.png) no-repeat left;
+        background: url(/project/images/san.png) no-repeat left;
         background-size: auto 40%;
         background-position-x: 10px; }
         .header .h_head .head .div_lang label {
@@ -64,7 +64,7 @@ a {
           padding-left: 68px;
           height: 33px;
           list-style-image: none;
-          background: url(../images/china.svg) no-repeat left;
+          background: url(/project/images/china.svg) no-repeat left;
           background-size: auto 50%;
           background-position-x: 43px;
           line-height: 33px; }
@@ -73,10 +73,10 @@ a {
         height: 33px;
         float: left; }
         .header .h_head .head ul .lis {
-          background: url(/product/images/15006336097366439.svg) no-repeat center center;
+          background: url(/project/images/15006336097366439.svg) no-repeat center center;
           background-size: 100% 100%; }
           .header .h_head .head ul .lis:hover {
-            background: url(/product/images/15006336097366439.svg) no-repeat center center;
+            background: url(/project/images/15006336097366439.svg) no-repeat center center;
             background-size: 100% 100%; }
         .header .h_head .head ul li {
           float: left;
@@ -123,13 +123,13 @@ a {
         line-height: 33px;
         font-size: 12px;
         text-align: right;
-        background: url(../images/icon.svg) no-repeat left center;
+        background: url(/project/images/icon.svg) no-repeat left center;
         background-size: 70% 70%; }
         .header .h_head .right .cart a {
           color: black;
           text-decoration: none; }
         .header .h_head .right .cart:hover {
-          background: url(../images/icon.svg) no-repeat left center;
+          background: url(/project/images/icon.svg) no-repeat left center;
           background-size: 80% 80%; }
       .header .h_head .right .dian {
         float: left;
@@ -138,10 +138,10 @@ a {
         line-height: 33px;
         text-align: right;
         font-size: 12px;
-        background: url(../images/std.svg) no-repeat 10px; }
+        background: url(/project/images/std.svg) no-repeat 10px; }
         .header .h_head .right .dian:hover {
           background-size: 60% 60%;
-          background: url(../images/std.svg) no-repeat 10px; }
+          background: url(/project/images/std.svg) no-repeat 10px; }
         .header .h_head .right .dian a {
           color: black;
           text-decoration: none; }

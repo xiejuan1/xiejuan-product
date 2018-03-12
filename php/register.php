@@ -21,7 +21,7 @@
 
 	// 判断是否注册成功
 	if ($result) {
-		$sql = "SELECT uid, email, firstname, score, level, createtime FROM mall_users WHERE email='$email'";
+		$sql = "SELECT uid, email, firstname,password, score, level, createtime FROM mall_users WHERE email='$email'";
 		$result = mysql_query($sql);
 		if ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
 			echo '{"res_code":0, "res_error":"", "res_body":'. json_encode($row) .'}';

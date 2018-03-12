@@ -55,7 +55,7 @@ require(["config"], function(){
 		
 			console.log($(this).parents(".box"));
 		//数量+/-
-		let _amount = Number(_prod.amount);
+		let _amount = parseFloat(_prod.amount);
 		if($(this).is(".add")){
 			_amount++;
 		}else{

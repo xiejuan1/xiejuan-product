@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		
 		<meta charset="UTF-8">
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="/project/css/pay.css"/>
@@ -16,8 +17,9 @@
 			<div class="order_nav">填写核对订单信息</div>
 			<div class="per_nav">收货人信息</div>
 			<div class="p"><label>点击添加新地址</label></div>
-			<div class="username"><span>收货人：</span> <input type="text" class="user"/></div>
-			<div class="phone"><span>手机号码：</span> <input type="text" class="userphone"/></div>
+			<div class="top">
+			<div class="username"><span>收货人：</span> <input type="text" class="user"/><div class="userinfo"></div></div>
+			<div class="phone"><span>手机号码：</span> <input type="text" class="userphone"/><div class="phoneinfo"></div></div>
 			<div class="provinced">
 				<span>省份：</span>
 				<select class="province"></select>
@@ -29,6 +31,163 @@
 			<div class="postcode"><span>邮编:</span><input type="text" class="postcoded" /><span id="title">请你使用准确的邮编以便于你准时的收货</span></div>
 			
 			<div class="choice"><button class="del">取消</button><button class="save">保存</button></div>
+			</div>
+			<div class="method">配送及支付方式</div>
+			<div class="payment">支付方式：在线支付</div>
+			<div class="h30">
+				<span>配送方式</span>
+				<input type="radio"  name="ral" id="check"/>
+
+				<label for="check">快递运输</label>
+				<div class="pay_ysf">我们将用最快的速度发货（运输费：￥0.00元)</div>
+				
+			</div>
+			
+			<div class="ziqu">
+				<input type="radio"  name="ral" id="checked"/>
+					<span>实体店自取</span>
+			</div>
+			
+			
+			<div class="bottom">
+			<div class="Tel">
+				<span>提货人手机</span>
+				<input type="text" class="tel">
+				<div class="info"></div>
+			</div>
+			<div class="shaixuan">
+				<div class="xuan">
+				<span>筛选：     省</span>
+				<select id="select">
+					<option >北京</option>
+					<option >天津</option>
+					<option >上海</option>
+					<option >重庆</option>
+					<option >河北省</option>
+					<option >山西省</option>
+					<option >辽宁省</option>
+					<option >江苏省</option>
+					<option >浙江省</option>
+					<option >安徽省</option>
+					<option >福建省</option>
+					
+				</select>
+				</div>
+				<div class="box">
+					<div class="div"><input type="radio" name="re" /><span>	北京三里屯太古里店 北京北京市朝阳区 三里屯太古里北区地下一层 NLG-09b</span></div>
+					<div class="div"><input type="radio" name="re" /><span>	北京金融街购物中心店 北京北京市西城区 金城坊街2号金融街购物中心B1-11</span></div>
+					<div class="div"><input type="radio" name="re" /><span>	北京丽思卡尔顿店 北京北京市朝阳区 华贸中心建国路甲83号北京丽思卡尔顿酒店大堂右侧</span></div>
+					<div class="div"><input type="radio" name="re" /><span>	北京新中关店 北京北京市海淀区 中关村大街19号新中关大厦一层L119a号商铺</span></div>
+					<div class="div"><input type="radio" name="re" /><span>	北京SKP店 北京北京市朝阳区 建国路87号 SKP一层D1036号</span></div>
+					<div class="div"><input type="radio" name="re" /><span>	北京国贸商城店 北京北京市朝阳区 建国门外大街1号国贸2期地下一层NB136</span></div>
+					<div class="div"><input type="radio" name="re" /><span>	北京东方广场店  北京北京市朝阳区 北京市东城区东长安街1号北京东方广场首层A303商铺</span></div>
+					<div class="div"><input type="radio" name="re" /><span>	北京颐堤港店  北京北京市朝阳区 北京市朝阳区酒仙桥路18号 颐堤港商场第L131号单元商铺</span></div>
+					
+				</div>
+				<div class="box1">
+					<div class="div"><input type="radio" name="re" /><span>	天津恒隆广场店 天津天津市和平区 兴安路166号 1047店铺</span></div>
+					<div class="div"><input type="radio" name="re" /><span>	天津银河广场店 天津天津市河西区 天津市河西区乐园道9号银河国际购物中心第L2层第013-1号</span></div>
+				</div>
+				<div class="box2">
+					<div class="div"><input type="radio" name="re" /><span>	上海新天地朗廷店 上海上海市黄浦区 马当路99号朗廷酒店一层</span></div>
+					<div class="div"><input type="radio" name="re" /><span>	上海嘉里中心店 上海上海市黄浦区 南京西路1563号静安嘉里中心商场NB1-21B室</span></div>
+					<div class="div"><input type="radio" name="re" /><span>	上海IAPM店 上海上海市徐汇区 上海市徐汇区淮海中路999号上海环贸广场三层（L3）321室</span></div>
+						
+				</div>
+				<div class="box3">
+					<div class="div"><input type="radio" name="re" /><span>	重庆新光天地店 重庆重庆市渝北区 重庆市渝北区红锦大道89号1层01004号</span></div>
+					<div class="div"><input type="radio" name="re" /><span>		重庆IFS店 重庆重庆市江北区 重庆市江北区城北大街38号2层L241</span></div>
+				</div>
+				<div class="box4">
+					<div class="div"><input type="radio" name="re" checked="checked" /><span>石家庄北国先天下店 河北省石家庄市长安区 石家庄市中山东路326号北国先天下广场一层名品区H-09</span></div>
+					
+				</div>
+				<div class="box5">
+					<div class="div"><input type="radio" name="re" checked="checked" /><span>太原天美新天地店 山西省太原市小店区 太原市小店区长风街113号一层A08区</span></div>
+					
+				</div>
+				<div class="box6">
+					<div class="div"><input type="radio" name="re" /><span>大连百年城店 辽宁省大连市中山区 大连市中山区解放路19号大连百年城一层L107</span></div>
+					<div class="div"><input type="radio" name="re" /><span>沈阳万象城店 辽宁省沈阳市和平区 沈阳市和平区青年大街288号沈阳华润中心万象城2层L205号</span></div>
+				
+				</div>
+				<div class="box7">
+					<div class="div"><input type="radio" name="re" /><span>	上海新天地朗廷店 上海上海市黄浦区 马当路99号朗廷酒店一层</span></div>
+					<div class="div"><input type="radio" name="re" /><span>	上海嘉里中心店 上海上海市黄浦区 南京西路1563号静安嘉里中心商场NB1-21B室</span></div>
+					<div class="div"><input type="radio" name="re" /><span>	上海IAPM店 上海上海市徐汇区 上海市徐汇区淮海中路999号上海环贸广场三层（L3）321室</span></div>
+					
+				</div>
+				<div class="box8">
+					<div class="div"><input type="radio" name="re" /><span>	上海新天地朗廷店 上海上海市黄浦区 马当路99号朗廷酒店一层</span></div>
+					<div class="div"><input type="radio" name="re" /><span>	上海嘉里中心店 上海上海市黄浦区 南京西路1563号静安嘉里中心商场NB1-21B室</span></div>
+					<div class="div"><input type="radio" name="re" /><span>	上海IAPM店 上海上海市徐汇区 上海市徐汇区淮海中路999号上海环贸广场三层（L3）321室</span></div>
+					<div class="div"><input type="radio" name="re" checked="checked" /><span>太原天美新天地店 山西省太原市小店区 太原市小店区长风街113号一层A08区</span></div>
+					
+				</div>
+				<div class="box9">
+					<div class="div"><input type="radio" name="re" checked="checked" /><span>	上海嘉里中心店 上海上海市黄浦区 南京西路1563号静安嘉里中心商场NB1-21B室</span></div>
+					
+				</div>
+				<div class="box10">
+					<div class="div"><input type="radio" name="re" checked="checked"/><span>	上海嘉里中心店 上海上海市黄浦区 南京西路1563号静安嘉里中心商场NB1-21B室</span></div>
+					
+				</div>
+			</div>
+			</div>
+			<div class="per_nav">商品清单</div>
+			<div class="list">
+				<div class="left">
+					<div class="list_img">
+						<img src="/project/images/new8.png">
+					</div>
+					<div class="list_left">
+						<p>商品名称：甜心熊-红粉-粉色端坐版(13cm)-中型公仔</p>
+						<p>商品数量：1</p>
+						<p>商品单价：¥1314.0</p>
+					</div>
+				</div>
+				<div class="right">
+					<p>收货人：</p>
+					<p>地址：</p>
+					<div class="day">
+						<span>送达日期：</span>
+						<input type="text" class="days"/>
+					<input type="checkbox" class="dan"/>
+					<label for="dan">同城速递</label>
+					</div>
+				</div>
+			</div>
+			<div class="per_nav">爱的留言</div>
+			<div class="leave">
+				<div class="left">
+					<div class="div">
+						送礼物前别忘了为收礼人留下你的专属真爱誓言！
+						扫码关注，下单后通过语音或文字的形式提交内容，
+						收礼人可随时查阅，感受独一无二的专属爱语。
+					</div>
+				</div>
+				<div class="right">
+					<span>第一步：关注公众号</span>
+					<img src="/project/images/code.png"/>
+					<span>第二步：开始留言</span>
+					<img src="/project/images/img.png"/>
+				</div>
+			</div>
+			<div class="per_nav">使用优惠券</div>
+			<div class="youhuiquan">
+				<div class="you">
+					<span>优惠券号码：</span>
+					<input type="text" class="hui"/>
+					<div class="quan"></div>
+				</div>
+				<div class="total">
+					<span>￥1314</span>
+					<span>总计：</span>
+				</div>
+			</div>
+			<div class="ti">
+				<button>提交订单</button>
+			</div>
 		</div>
 		<footer></footer>
 	</body>

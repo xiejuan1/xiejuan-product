@@ -2,7 +2,7 @@ define(["jquery", "cookie"], function() {
 	$("header").load("/project/html/include/header.html", function(){
 		
 		/* 查询是否有登录用户 */
-		let user = $.cookie("loginUser");
+		let user = $.cookie("login");
 		if (user)
 			$(".login_reg").html(`<a href="${user}"></a>`);
 	});

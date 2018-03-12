@@ -1,6 +1,6 @@
 .content{
     width: 962px;
-    height: 1000px;
+    overflow: hidden;
     margin: 0 auto;
     .order_nav{
         height: 70px;
@@ -20,6 +20,7 @@
         font-weight: bold;
        
     }
+    
     .p{
         height: 70px;
         width: 962px;
@@ -27,6 +28,11 @@
         font-size: 12px;
        
     }
+    .top{
+
+        width: 960px;
+        height:495px;
+    
     
     .username{
          height: 70px;
@@ -46,6 +52,16 @@
             width: 217px;
             height: 35px;
         }
+        .userinfo{
+            float: left;
+            width: 217px;
+            height: 35px;
+            font-size: 14px;
+            line-height: 35px;
+            text-align: center;
+            color: red;
+        }
+        
     }
     
     
@@ -67,6 +83,17 @@
             width: 217px;
             height: 35px;
         }
+        
+        .phoneinfo{
+            float: left;
+            width: 217px;
+            height: 35px;
+            font-size: 14px;
+            color: red;
+            line-height: 35px;
+            text-align: center;
+        }
+        
     }
      
    
@@ -153,6 +180,7 @@
             text-align: left;
             line-height: 35px;
             font-size: 14px;
+            margin-left: 20px;
         } 
     }
   
@@ -172,6 +200,8 @@
                opacity: .8;
            }
         }
+        
+    
         .del{
             float: right;
             width: 80px;
@@ -186,5 +216,429 @@
            } 
         }
         
-        }    
+        }
+        
+        }   
+        
+        
+        
+    .method{
+        width: 960px;
+        height: 32px;
+        border-bottom: 1px solid;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 32px;
+    } 
+   .payment{
+        width: 960px;
+        height:27px;
+//      border-bottom: 1px solid;
+        font-size: 14px;
+        line-height:27px;
+    }
+    
+    .h30{
+        width: 960px;
+        height: 32px;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 32px;
+        
+        span{
+            float: left;
+            height: 32px;
+            width: 80px;
+            line-height: 32px;
+            font-size: 14px;
+        }
+        #check{
+            float: left;
+            line-height: 32px;
+            height: 32px;
+            margin: 0 20px;
+        }
+        label{
+            width: 63px;
+            height: 32px;
+            line-height: 32px;
+            font-size: 14px;
+            float: left;
+        }
+        
+        .pay_ysf{
+            width:304px;
+            height: 32px;
+            float: left;
+            font-weight: normal;
+            line-height: 32px;
+            font-size: 14px;
+            color: #DCDCDC;
+        }
+    } 
+    
+    .ziqu{
+        height: 32px;
+        width: 960px;
+        padding-left: 98px;
+        box-sizing: border-box;
+        line-height: 32px;
+        span{
+            font-size: 14px;
+            height: 32px;
+            margin-left: 20px;
+            font-weight: bold;
+            
+        }
+    } 
+    
+    .bottom{
+        width: 960px;
+        overflow: hidden;
+        display: none;
+    .Tel{
+        width: 960px;
+        height: 35px;
+//      background: palegoldenrod;
+        span{
+            height: 35px;
+            width: 100px;
+            line-height: 35px;
+            font-size: 14px;
+            float: left;
+        }
+        .tel{
+            float: left;
+            width: 220px;
+            height: 35px;
+        }
+        .info{
+            height: 35px;
+            float: left;
+            width: 300px;
+//          background: red;
+            color: red;
+            line-height: 35px;
+        }
+    } 
+    
+    .shaixuan{
+        width: 960px;
+       overflow: hidden;
+//      background: paleturquoise;
+        margin-top: 30px;
+        
+        .xuan{
+            width: 960px;
+            height: 35px;
+        span{
+            width: 98px;
+            height: 35px;
+            float: left;
+            display: block;
+            line-height: 35px;
+        }
+      select{
+          width: 220px;
+          height: 35px;
+          float: left;
+      } 
+      }
+      .box{
+          width: 960px;
+          height:300px;
+          font-size: 14px;
+          margin-top: 20px;
+          padding-left: 20px;
+          box-sizing: border-box;
+          line-height: 35px;
+      } 
+      .box1{
+          width: 960px;
+          height:82px;
+          font-size: 14px;
+          display: none;
+          margin-top: 20px;
+          padding-left: 20px;
+          box-sizing: border-box;
+          line-height: 35px;
+      } 
+      .box2{
+          width: 960px;
+          height:114px;
+          font-size: 14px;
+          margin-top: 20px;
+          padding-left: 20px;
+          box-sizing: border-box;
+          line-height: 35px;
+           display: none;
+      } 
+      .box3{
+          width: 960px;
+          height:82px;
+          font-size: 14px;
+         display: none;
+          margin-top: 20px;
+          padding-left: 20px;
+          box-sizing: border-box;
+          line-height: 35px;
+      } 
+      .box4{
+          width: 960px;
+          height:42px;
+          font-size: 14px;
+           display: none;
+          margin-top: 20px;
+          padding-left: 20px;
+          box-sizing: border-box;
+          line-height: 35px;
+      } 
+      .box5{
+          width: 960px;
+          height:42px;
+          font-size: 14px;
+           display: none;
+          margin-top: 20px;
+          padding-left: 20px;
+          box-sizing: border-box;
+          line-height: 35px;
+      } 
+      .box6{
+          width: 960px;
+          height:82px;
+          font-size: 14px;
+         display: none;
+          margin-top: 20px;
+          padding-left: 20px;
+          box-sizing: border-box;
+          line-height: 35px; 
+      }
+      .box7{
+          width: 960px;
+          height:114px;
+          font-size: 14px;
+          margin-top: 20px;
+          padding-left: 20px;
+          box-sizing: border-box;
+          line-height: 35px;
+           display: none; 
+      }
+      .box8{
+          width: 960px;
+          height:154px;
+          font-size: 14px;
+          margin-top: 20px;
+          padding-left: 20px;
+          box-sizing: border-box;
+          line-height: 35px;
+           display: none;  
+      }
+      .box9{
+          width: 960px;
+          height:42px;
+          font-size: 14px;
+           display: none;
+          margin-top: 20px;
+          padding-left: 20px;
+          box-sizing: border-box;
+          line-height: 35px;
+      }
+      .box10{
+          width: 960px;
+          height:42px;
+          font-size: 14px;
+           display: none;
+          margin-top: 20px;
+          padding-left: 20px;
+          box-sizing: border-box;
+          line-height: 35px;
+      }
+    } 
+    
+    }
+    .per_nav{
+        width: 960px;
+        height: 32px;
+        line-height: 32px;
+        font-size: 16px;
+        font-weight: bold;
+        border-bottom: 1px solid;
+
+
+    }  
+    
+    .list{
+        width: 960px;
+        height: 190px;
+//      border: 1px solid red;
+        box-sizing: border-box;
+        padding: 30px 0;
+        
+        .left{
+            height: 125px;
+            width: 400px;
+            float: left;
+            border-right: 1px solid;
+            
+         .list_img{
+             float: left;
+             height: 125px;
+             width: 125px;
+             img{
+                 width: 100px;
+                 height: 100px;
+             }
+         }
+         
+         .list_left{
+             width:274px;
+             float: left;
+             height: 125px;
+             font-size: 12px;
+             p{
+                height: 20px;
+                width: 274px;
+                line-height: 20px; 
+             }
+         }   
+        }
+        
+        .right{
+            float: left;
+            width: 550px;
+            height: 125px;
+            font-size: 14px;
+            padding-left: 20px;
+            box-sizing: border-box;
+            p{
+                width: 500px;
+                height: 20px;
+                line-height: 20px;
+            }
+            .day{
+                width: 500px;
+                height: 40px;
+                span{
+                    float: left;
+                    height: 35px;
+                    line-height: 35px;
+                }
+              .days{
+                  float: left;
+                  height: 35px;
+                  width: 220px;
+              } 
+              
+              .dan{
+                  float: left;
+                  line-height: 35px;
+                  margin-left: 10px;
+                    margin-top: 10px;
+              } 
+              label{
+                    float: left;
+                    height: 35px;
+                    
+                    line-height: 35px;
+                }
+            }
+        }
+    } 
+    
+    .leave{
+        width: 960px;
+        height: 170px;
+        padding: 30px 0;
+        box-sizing: border-box;
+        
+        .left{
+            width: 400px;
+            border-right: 1px solid;
+            height: 125px;
+            float: left;
+            div{
+                width: 300px;
+                height: 96px;
+                margin-top: 25px;
+            }
+        }
+        .right{
+             float: left;
+            width: 550px;
+            height: 125px;
+            font-size: 14px;
+            padding-left: 20px;
+            box-sizing: border-box;
+            
+            span{
+                width: 174px;
+                height: 120px;
+                float: left;
+                line-height: 120px;
+                font-size: 14px;
+                text-align: center;
+            }
+            img{
+                float: left;
+            }
+        }
+    }
+    .youhuiquan{
+        width: 960px;
+        height: 170px;
+        position: relative;
+        border-bottom:5px solid;
+        .you{
+            width: 960px;
+            height: 96px;
+            padding: 30px 0;
+            box-sizing: border-box;
+            
+            span{
+                height: 35px;
+                width: 100px;
+                line-height: 35px;
+                font-size: 14px;
+                float: left;
+            }
+            .hui{
+                height: 36px;
+                width: 220px;
+                float: left;
+            }
+            .quan{
+                width: 220px;
+                color: red;
+                font-size: 14px;
+                text-align: center;
+                line-height: 35px;
+                height: 35px;
+            }
+        }
+        .total{
+            width: 960px;
+            height: 36px;
+            font-size: 14px;
+            position: absolute;
+            bottom: 0;
+            span{
+                float: right;
+                font-weight: bold;
+            }
+        }
+    }
+    .ti{
+        width: 960px;
+        height: 40px;
+        margin: 20px 0;
+        
+        button{
+            height: 40px;
+            width: 200px;
+            float: right;
+            background: black;
+            color: white;
+            border: none;
+        }
+    }
 }

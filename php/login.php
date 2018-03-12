@@ -1,13 +1,13 @@
 <?php 
 	// 获取输入的登录用户名与密码
-	$email = $_POST["email"];
+	$firstname = $_POST["firstname"];
 	$password = $_POST["password"];
 	/* 在数据库中比对用户信息 */
 	$conn = mysql_connect("localhost", "root", "");
 	mysql_select_db("h51710", $conn);
 	mysql_query("set character set 'utf8'");
 	mysql_query("set names 'utf8'");
-	$sql = "SELECT uid, email, firstname, lastname, score, level, createtime FROM `mall_users` WHERE email='$email' and password='$password'";
+	$sql = "SELECT uid, email, firstname,password, score, level, createtime FROM `mall_users` WHERE firstname='$firstname' and password='$password'";
 	// 执行查询SQL语句，返回查询结果集（类似表格）
 	$result = mysql_query($sql);
 
