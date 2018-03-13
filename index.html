@@ -14,6 +14,20 @@
 		<header></header>
 		
 		<div class="content">
+			<div class="ewmbox">
+				<a href="#" style="position: relative;"><img src="/project/images/er.svg"></a>
+				<div class="ewm_content" style="display: none;"><img src="/project/images/wei.jpg"></div>
+			</div>
+			
+			<div class="zhichibtnbox">
+				<img src="/project/images/xin.svg">
+				
+				<div class="mes_content">
+					<div class="lianxi">联系电话</div>
+					<p>400-1314-520</p>
+					<div class="kefu">在线客服</div>
+				</div>
+			</div>
 			<div class="banner">
 				
 				
@@ -638,6 +652,20 @@
 		height:405,
 		duration:3000
 						});	
+						
+						
+		$(".ewmbox").hover(function(){
+			$(".ewm_content").css("display","block");
+		},function(){
+			$(".ewm_content").css("display","none");
+			
+		});
+		$(".zhichibtnbox").hover(function(){
+			$(".mes_content").css("display","block");
+		},function(){
+			$(".mes_content").css("display","none");
+			
+		});
 		
 		})
 	})

@@ -8,12 +8,12 @@ require(["config"],function(){
 		$(".email_info").blur(function(){
 				var reg =/^[\w-]+(\.[\w-]+)*@[\w-]+(\.[\w-]+)+$/;
 			
-			$.getJSON("/project/php/check.php",{email:$(this).val()},function(data){
+			$.getJSON("/project/php/check.php",{"email":$(this).val()},function(data){
 
 				if(data.res_body.status == 0 && reg.test($(".email_info").val())){
 					isExist = false;
 					$(".infos").text("邮箱可用");
-				}else{
+				}else if(data.res_body.status == 1){
 					isExist = true;
 					$("infos").text("邮箱已被注册，请重新输入");
 				}

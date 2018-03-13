@@ -1,6 +1,76 @@
 .content {
   width: 100%;
   overflow: hidden; }
+  .content .ewmbox {
+    width: 45px;
+    height: 45px;
+    background: darkgray;
+    position: fixed;
+    border-radius: 10px;
+    top: 500px;
+    right: 0; }
+    .content .ewmbox:hover {
+      background: #DCDCDC; }
+    .content .ewmbox img {
+      height: 45px;
+      width: 35px;
+      margin-left: 5px; }
+    .content .ewmbox .ewm_content {
+      width: 150px;
+      height: 146px;
+      position: fixed;
+      bottom: 320px;
+      right: 50px; }
+      .content .ewmbox .ewm_content img {
+        width: 150px;
+        height: 146px; }
+  .content .zhichibtnbox {
+    width: 45px;
+    height: 45px;
+    background: darkgray;
+    position: fixed;
+    top: 557px;
+    border-radius: 10px;
+    right: 0; }
+    .content .zhichibtnbox:hover {
+      background: #DCDCDC; }
+    .content .zhichibtnbox img {
+      width: 45px;
+      height: 45px; }
+    .content .zhichibtnbox .mes_content {
+      width: 115px;
+      height: 120px;
+      position: fixed;
+      bottom: 225px;
+      right: 50px;
+      background: white;
+      display: none;
+      border: 1px solid #DCDCDC; }
+      .content .zhichibtnbox .mes_content .lianxi {
+        width: 115px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        color: darkgray;
+        font-size: 14px; }
+      .content .zhichibtnbox .mes_content p {
+        width: 115px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        color: darkgray;
+        border-bottom: 1px solid #DCDCDC; }
+      .content .zhichibtnbox .mes_content .kefu {
+        width: 90px;
+        margin-top: 5px;
+        background: darkgray;
+        border-radius: 5px;
+        height: 30px;
+        margin-left: 10px;
+        text-align: center;
+        font-size: 14px;
+        line-height: 30px;
+        color: white; }
   .content .banner {
     width: 1118px;
     height: 405px;

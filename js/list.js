@@ -91,6 +91,7 @@ require(["config"], function(){
 		$.each(_products, function(index,element) {
 			sum += Number(this.price);
 		});
+		$(".head .cart a span").css("background","white");
 		$(".head .cart a span").text("("+sum+")");
 		
 		return false;

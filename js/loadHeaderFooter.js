@@ -5,6 +5,8 @@ define(["jquery", "cookie"], function() {
 		let user = $.cookie("login");
 		if (user)
 			$(".login_reg").html(`<a href="${user}"></a>`);
+			
+	
 	});
 	
 	$("footer").load("/project/html/include/footer.html");

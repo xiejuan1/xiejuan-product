@@ -108,19 +108,28 @@ require(["config"],function(){
 		}
 	});
 	
-	
+	console.log($(".user").val());
 	//保存收货人信息
 	$(".save").click(function(){
-		
+		if($(".user").val()==""){
+			alert("请填写完整信息");
+			isExist = false;
+		}
+		if(isExist){
 		let _consignee = $(".user").val(),
 			_phone = $(".userphone").val(),
+			_postcode = $(".postcoded").val(),
+			_province = $(".province").val(),
 			_address = $(".add").val();
-			if(isExist){
-	$.post("/project/php/pay.php",{"consignee":_consignee,"phone":_phone,"address":_address},function(data){
-		console.log(data);
-		$.cookie,json = true;
-		$.cookie("pay",data.res_body,{path:"/"});
-		alert("保存成功")
+		
+	$.post("/project/php/pay.php",{"consignee":_consignee,"province":_province,"postcode":_postcode,"phone":_phone,"address":_address},function(data){
+			
+			let queryString =[{"consignee":_consignee,"province":_province,"postcode":_postcode,"phone":_phone,"address":_address}];
+			//保存登录成功的信息到cookie中
+			$.cookie.json = true;
+			$.cookie("consignee",queryString,{path:"/"}); 
+			alert("保存成功");
+		
 	},"json");
 	}else{
 			
@@ -129,13 +138,13 @@ require(["config"],function(){
 	
 	});
 	
-	
+	let isit = true;
 	//验证电话号码
 	$(".tel").blur(function(){
 	
 		let reg =/^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\d{8}$/;
 		if(!reg.test($(".tel").val())){
-			
+			isit = false;
 			$(".info").text("请输入正确的电话格式");
 		}else{
 			$(".info").text(" ");
@@ -293,6 +302,16 @@ require(["config"],function(){
 	
 	
 	});
+	
+	
+	$(".ti").on("click","button",function(){
+		if(!isExist){
+			alert("请补充完整信息");
+		}else{
+			alert("提交成功");
+		}
+	})
+	
 	
 	
 	});
