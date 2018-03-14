@@ -12,7 +12,7 @@ $.post("/project/php/login.php",{"password":_password,"firstname":_firstname}, f
 				$.cookie.json = true; // 自动调用JSON.stringify()、JSON.parse()来转换JS值与JSON字符串
 				$.cookie("login", data.res_body, {path:"/"});
 				alert("登录成功");
-				//location = "/project/index.html";
+				location = "/project/index.html";
 			} else {
 				alert("用户名或密码有误");
 			}

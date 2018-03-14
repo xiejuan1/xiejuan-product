@@ -38,113 +38,118 @@ a {
 .header {
   width: 100%;
   min-height: 145px; }
-  .header .h_head {
+  .header .scroll {
     width: 100%;
-    height: 33px;
-    background: #e7e7e7; }
-    .header .h_head .head {
-      width: 1118px;
+    height: 33px; }
+    .header .scroll .h_head {
+      width: 100%;
       height: 33px;
-      margin: 0 auto; }
-      .header .h_head .head .div_lang {
-        float: left;
-        width: 125px;
+      position: fixed;
+      top: 0;
+      background: #e7e7e7; }
+      .header .scroll .h_head .head {
+        width: 1118px;
         height: 33px;
-        line-height: 33px;
-        font-size: 13px;
-        color: #414141;
-        cursor: pointer;
-        list-style: none;
-        background: url(/project/images/san.png) no-repeat left;
-        background-size: auto 40%;
-        background-position-x: 10px; }
-        .header .h_head .head .div_lang label {
-          display: block;
-          cursor: pointer;
-          padding-left: 68px;
+        margin: 0 auto; }
+        .header .scroll .h_head .head .div_lang {
+          float: left;
+          width: 125px;
           height: 33px;
-          list-style-image: none;
-          background: url(/project/images/china.svg) no-repeat left;
-          background-size: auto 50%;
-          background-position-x: 43px;
-          line-height: 33px; }
-      .header .h_head .head ul {
-        width: 345px;
-        height: 33px;
-        float: left; }
-        .header .h_head .head ul .lis {
-          background: url(/project/images/15006336097366439.svg) no-repeat center center;
-          background-size: 100% 100%; }
-          .header .h_head .head ul .lis:hover {
+          line-height: 33px;
+          font-size: 13px;
+          color: #414141;
+          cursor: pointer;
+          list-style: none;
+          background: url(/project/images/san.png) no-repeat left;
+          background-size: auto 40%;
+          background-position-x: 10px; }
+          .header .scroll .h_head .head .div_lang label {
+            display: block;
+            cursor: pointer;
+            padding-left: 68px;
+            height: 33px;
+            list-style-image: none;
+            background: url(/project/images/china.svg) no-repeat left;
+            background-size: auto 50%;
+            background-position-x: 43px;
+            line-height: 33px; }
+        .header .scroll .h_head .head ul {
+          width: 345px;
+          height: 33px;
+          float: left; }
+          .header .scroll .h_head .head ul .lis {
             background: url(/project/images/15006336097366439.svg) no-repeat center center;
             background-size: 100% 100%; }
-        .header .h_head .head ul li {
+            .header .scroll .h_head .head ul .lis:hover {
+              background: url(/project/images/15006336097366439.svg) no-repeat center center;
+              background-size: 100% 100%; }
+          .header .scroll .h_head .head ul li {
+            float: left;
+            height: 33px;
+            width: 113px;
+            list-style: none;
+            text-align: center;
+            line-height: 33px; }
+            .header .scroll .h_head .head ul li:hover {
+              background: white; }
+            .header .scroll .h_head .head ul li a {
+              color: #1A2F38;
+              text-decoration: none; }
+      .header .scroll .h_head .right {
+        width: 165px;
+        height: 33px;
+        float: right; }
+        .header .scroll .h_head .right .login {
           float: left;
+          width: 35px;
           height: 33px;
-          width: 113px;
-          list-style: none;
           text-align: center;
-          line-height: 33px; }
-          .header .h_head .head ul li:hover {
-            background: white; }
-          .header .h_head .head ul li a {
-            color: #1A2F38;
+          line-height: 33px;
+          font-size: 12px; }
+          .header .scroll .h_head .right .login a {
+            color: black;
             text-decoration: none; }
-    .header .h_head .right {
-      width: 165px;
-      height: 33px;
-      float: right; }
-      .header .h_head .right .login {
-        float: left;
-        width: 35px;
-        height: 33px;
-        text-align: center;
-        line-height: 33px;
-        font-size: 12px; }
-        .header .h_head .right .login a {
-          color: black;
-          text-decoration: none; }
-        .header .h_head .right .login:hover {
-          background: white; }
-      .header .h_head .right .register {
-        float: left;
-        width: 35px;
-        height: 33px;
-        text-align: center;
-        line-height: 33px;
-        font-size: 12px; }
-        .header .h_head .right .register a {
-          color: black;
-          text-decoration: none; }
-      .header .h_head .right .cart {
-        float: left;
-        width: 35px;
-        height: 33px;
-        line-height: 33px;
-        font-size: 12px;
-        text-align: right;
-        background: url(/project/images/icon.svg) no-repeat left center;
-        background-size: 70% 70%; }
-        .header .h_head .right .cart a {
-          color: black;
-          text-decoration: none; }
-        .header .h_head .right .cart:hover {
+          .header .scroll .h_head .right .login:hover {
+            background: white; }
+        .header .scroll .h_head .right .register {
+          float: left;
+          width: 35px;
+          height: 33px;
+          text-align: center;
+          line-height: 33px;
+          font-size: 12px; }
+          .header .scroll .h_head .right .register a {
+            color: black;
+            text-decoration: none; }
+        .header .scroll .h_head .right .cart {
+          float: left;
+          width: 35px;
+          height: 33px;
+          line-height: 33px;
+          font-size: 12px;
+          text-align: right;
           background: url(/project/images/icon.svg) no-repeat left center;
-          background-size: 80% 80%; }
-      .header .h_head .right .dian {
-        float: left;
-        width: 60px;
-        height: 33px;
-        line-height: 33px;
-        text-align: right;
-        font-size: 12px;
-        background: url(/project/images/std.svg) no-repeat 10px; }
-        .header .h_head .right .dian:hover {
-          background-size: 60% 60%;
+          background-size: 70% 70%; }
+          .header .scroll .h_head .right .cart a {
+            color: black;
+            text-decoration: none; }
+          .header .scroll .h_head .right .cart:hover {
+            background: url(/project/images/icon.svg) no-repeat left center;
+            background-size: 80% 80%; }
+        .header .scroll .h_head .right .dian {
+          float: left;
+          width: 60px;
+          height: 33px;
+          line-height: 33px;
+          text-align: right;
+          font-size: 12px;
           background: url(/project/images/std.svg) no-repeat 10px; }
-        .header .h_head .right .dian a {
-          color: black;
-          text-decoration: none; }
+          .header .scroll .h_head .right .dian:hover {
+            background-size: 60% 60%;
+            background: url(/project/images/std.svg) no-repeat 10px; }
+          .header .scroll .h_head .right .dian a {
+            color: black;
+            text-decoration: none; }
   .header .login {
     width: 100%;
     height: 75px; }

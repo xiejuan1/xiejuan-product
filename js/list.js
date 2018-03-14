@@ -53,13 +53,17 @@ require(["config"], function(){
 		
 	
 		
-	require(["jquery","template","cookie"],function($,cookie){
+	require(["jquery","template","cookie"],function($,template,cookie){
 	
 		//通过点击//加入购物车，保存到cookie里；
 		
 		$(".prod").on("click",".add_cart",function(){
 			//当前选购商品对象
-		console.log($(this).siblings(".img").find("img").attr("src"));
+		if($.cookie("login")==null){
+			alert("请先登录用户信息。。。。")
+			location ="/project/html/login.html";
+			return;
+		}
 		let product = {
 			pid:$(this).siblings(".id").text(),
 			title:$(this).siblings(".title").text(),
@@ -91,7 +95,7 @@ require(["config"], function(){
 		$.each(_products, function(index,element) {
 			sum += Number(this.price);
 		});
-		$(".head .cart a span").css("background","white");
+		$(".head .cart a span").css("background","#e7e7e7");
 		$(".head .cart a span").text("("+sum+")");
 		
 		return false;

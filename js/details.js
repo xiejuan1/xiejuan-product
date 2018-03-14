@@ -36,6 +36,15 @@ require(["config"], function(){
 	
 	//通过点击加入购物车，保存到cookie
 	$(".flower").on("click",".add_cart",function(){
+		//先确认是否有用户登录信息
+	if($.cookie("login")==null){
+				alert("请先登录用户信息。。。。")
+				location ="/project/html/login.html";
+				return;
+			}		
+		
+		
+		
 		let product = {
 			pid:$(".id").text(),
 			title:$("h4").text(),

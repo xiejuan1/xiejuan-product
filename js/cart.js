@@ -117,6 +117,13 @@ require(["config"], function(){
 	
 	
 	$(".pay").click(function(){
+		
+	if($.cookie("products")==null){
+			alert("请先登录用户信息。。。。")
+			location ="/project/html/list.html";
+			return;
+		}
+		
 		location = "/project/html/pay.html";
 	})
 	
@@ -130,6 +137,17 @@ require(["config"], function(){
 		$(".carts > .cart_foot > .total > .totalmoney").html(total +"￥");
 	}
 	
+	
+	$(".container").on("click",".clear",function(){
+	var sure=confirm("是否清空购物车");
+	if(sure){
+		$.cookie("products",_products,{expires:-1,path:"/"});		
+		$(".carts").find(".cart_body").empty();
+	}else{
+		return;
+	}
+	
+	})
 	
 	});
 });
